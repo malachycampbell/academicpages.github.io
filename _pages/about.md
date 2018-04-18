@@ -10,7 +10,7 @@ redirect_from:
 
 I am currently a postdoc in the Morota Lab at the University of Nebraska Lincoln. Currently, my research focuses on applying methods in quantitative genetics for genomic inference and prediction of longitudinal traits derived from high-throughput phenotyping platforms. 
 
-Outside of my professional life I enjoy running, playing the guitar (to trying to ;) ), cooking, and spending time with friends and family.
+Outside of my professional life I enjoy running, playing the guitar (or trying to ;) ), cooking, and spending time with friends and family.
 
 Research Interests
 ======
