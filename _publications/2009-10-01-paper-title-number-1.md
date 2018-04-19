@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Introgression of novel traits from a wild wheat relative improves drought adaptation in wheat"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
+permalink: /publication/2013_Placido
+excerpt: 'This paper looks at the effects of an introgression from <i>Agropyron elongatum</i> into <i>Triticum aestivum</i> on drought tolerance.'
+date: 2013-04
+venue: 'Plant Physiol.'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'Placido, D.F., M.T. Campbell, J.J. Folsom, X. Cui, G.R. Kruger, P.S. Baenziger, and H. Walia (2013). &quot;Introgression of novel traits from a wild wheat relative improves drought adaptation in wheat&quot; <i>Plant Physiol.</i> 161(4): 1806–1819.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Here we studied the morphological and physiological effects of an introgression from a distant relative of wheat, Agropyron elongatum, into Triticum aestivum. The introgression improved root biomass under water-limited conditions, which translated to improved drought tolerance.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://malachycampbell.github.io/files/Placido_2014.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Placido, D.F., M.T. Campbell, J.J. Folsom, X. Cui, G.R. Kruger, P.S. Baenziger, and H. Walia. (2013). Introgression of novel traits from a wild wheat relative improves drought adaptation in wheat. <i>Plant Physiol.</i> 161(4): 1806–1819.
