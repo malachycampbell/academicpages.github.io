@@ -1,7 +1,7 @@
 ---
 title: "Genetic and Molecular Characterization of Submergence Response Identifies Subtol6 as a Major Submergence Tolerance Locus in Maize"
 collection: publications
-permalink: /publication/2015-03-25-Genetic-and-Molecular-Characterization-of-Submergence-Response-Identifies-Subtol6-as-a-Major-Submergence-Tolerance-Locus-in-Maize
+permalink: /publications/2015-03-25-Genetic-and-Molecular-Characterization-of-Submergence-Response-Identifies-Subtol6-as-a-Major-Submergence-Tolerance-Locus-in-Maize
 excerpt: 'This paper assess natural variation for submegence tolerance in maize and identifies a QTL that influences submegence tolerance.'
 date: 2015-03-25
 venue: 'PLoS One'
