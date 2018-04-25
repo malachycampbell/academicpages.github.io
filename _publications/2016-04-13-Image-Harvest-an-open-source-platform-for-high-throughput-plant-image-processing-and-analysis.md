@@ -1,7 +1,7 @@
 ---
 title: "Image Harvest: an open source platform for high throughput plant image processing and analysis"
 collection: publications
-permalink: /publication/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis
+permalink: /publications/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis
 excerpt: 'We developed a software to process and anayze images derived from high throughput phenotyping platforms.'
 date: 2016-04-13
 venue: 'Journal of Experimental Botany'
