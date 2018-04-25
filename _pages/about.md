@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a postdoc in the Morota Lab at the University of Nebraska Lincoln. Currently, my research focuses on applying methods in quantitative genetics for genomic inference and prediction of longitudinal traits derived from high-throughput phenotyping platforms. 
+Hello! I'm Malachy (Mack), a plant physiologist and a post-doctoral scholar at the University of Nebraska Lincoln. Although my research  focuses on plants, I currently a postdoc in the Morota Lab in the Department of Animal Science at UNL. My background is plant physiology, molecular biology, and genetics. However, after finishing my PhD I've started to get my feet wet in the world of quanititative genetics. Currently, my research focuses on applying methods in quantitative genetics for genome-wide association and genomic prediction of longitudinal traits derived from high-throughput phenotyping platforms. 
 
 Outside of my professional life I enjoy running, playing the guitar (or trying to), cooking, and spending time with friends and family.
 
