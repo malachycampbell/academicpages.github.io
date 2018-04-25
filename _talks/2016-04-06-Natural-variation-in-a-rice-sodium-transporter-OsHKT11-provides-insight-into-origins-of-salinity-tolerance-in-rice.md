@@ -1,5 +1,5 @@
 ---
-title: "Natural variation in a rice sodium transporter, <i>OsHKT1.1<i/>, provides insight into origins of salinity tolerance in rice"
+title: "Natural variation in a rice sodium transporter, <i>OsHKT1.1</i>, provides insight into origins of salinity tolerance in rice"
 collection: talks
 type: "Department Seminar"
 permalink: /talks/2016-04-06-Natural-variation-in-a-rice-sodium-transporter-OsHKT11-provides-insight-into-origins-of-salinity-tolerance-in-rice
