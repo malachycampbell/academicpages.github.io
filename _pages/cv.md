@@ -69,9 +69,9 @@ Posters
 Awards
 ======
 * 2017: Student Oral Presentation Award, Nebraska Plant Breeding Symposium, University of Nebraska Lincoln, Department of Agronomy and Horticulture
-* 2016 Best Oral Presentation, UNL Plant Science Retreat, University of Nebraska Lincoln, Plant Science Initiative
-* 2012 Hardin Distinguished Graduate Fellowship, University of Nebraska Lincoln, Department of Agronomy and Horticulture
-* 2010 Plant Science Excellence Award: Rutgers, Cook College, Department of Plant Science
+* 2016: Best Oral Presentation, UNL Plant Science Retreat, University of Nebraska Lincoln, Plant Science Initiative
+* 2012: Hardin Distinguished Graduate Fellowship, University of Nebraska Lincoln, Department of Agronomy and Horticulture
+* 2010: Plant Science Excellence Award: Rutgers, Cook College, Department of Plant Science
 
 Skills
 ======
@@ -85,9 +85,9 @@ Skills
     * Genome-wide Association Mapping: GEMMA, EMMA, TASSEL
     * eQTL Mapping: Matrix eQTL, eQTL-BMA, TWAS/Fusion
   * Statistics
-  * SAS
-  * R
-  * asREML
+    * SAS
+    * R
+    * asREML
 
 * Wet Lab Skills
   * PCR, real-time PCR, electrophoresis
