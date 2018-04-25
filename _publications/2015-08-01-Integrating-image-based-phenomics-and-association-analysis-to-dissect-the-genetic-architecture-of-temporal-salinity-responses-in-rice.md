@@ -1,7 +1,7 @@
 ---
 title: "Integrating image based phenomics and association analysis to dissect the genetic architecture of temporal salinity responses in rice"
 collection: publications
-permalink: /publication/2015-08-01-Integrating-image-based-phenomics-and-association-analysis-to-dissect-the-genetic-architecture-of-temporal-salinity-responses-in-rice
+permalink: /publications/2015-08-01-Integrating-image-based-phenomics-and-association-analysis-to-dissect-the-genetic-architecture-of-temporal-salinity-responses-in-rice
 excerpt: 'Here, we used image based high thoughput phenotyping and association mapping to examine the genetic basis of temporal salinity responses.'
 date: 2015-08-01
 venue: 'Plant Physiology'
