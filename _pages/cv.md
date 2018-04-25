@@ -14,7 +14,7 @@ Education
 * B.S., Plant Science, Specialization in Research, Rutgers University, May 2010
   * Advisors: Drs. Richard Merritt, Gojko Jelenkovic
 * Ph.D., Agronomy, Specialization in Plant Breeding and Genetics, University of Nebraska - Lincoln, August 2017
-  * Dissertation: "Dissecting the genetic architecture of salinity responses in rice (Oryza sativa)".
+  * Dissertation: "Dissecting the genetic architecture of salinity responses in rice (<i>Oryza sativa</i>)".
   * Advisor: Dr. Harkamal Walia
   * Committee: Drs. Paul Staswick, Chi Zhang, and Gautam Sarath
 
@@ -109,5 +109,5 @@ Teaching Experience
 
 * September 2010 - December 2010: Private Tutor
   * Plant Science Department
-  Rutgers University, New Brunswick, NJ
-  Courses: Introduction to Horticulture (11:776:211), General Plant Pathology (11:770:301), Plant Science (11:776:242), Plant Genetics (11:776:305))
+  * Rutgers University, New Brunswick, NJ
+  * Courses: Introduction to Horticulture (11:776:211), General Plant Pathology (11:770:301), Plant Science (11:776:242), Plant Genetics (11:776:305))
