@@ -1,7 +1,7 @@
 ---
 title: "Allelic variants of <i>OsHKT1;1</i> underlie the divergence between <i>indica</i> and <i>japonica</i> subspecies of rice (<i>Oryza sativa</i>) for root sodium content"
 collection: publications
-permalink: /publication/2017-06-05-Allelic-variants-of-OsHKT11-underlie-the-divergence-between-indica-and-japonica-subspecies-of-rice-for-root-sodium-content
+permalink: /publications/2017-06-05-Allelic-variants-of-OsHKT11-underlie-the-divergence-between-indica-and-japonica-subspecies-of-rice-for-root-sodium-content
 excerpt: '<i>HKT1;1</i> was identified as a major regualtor of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.'
 date: 2017-06-05
 venue: 'PLoS Genetics'
