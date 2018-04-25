@@ -1,7 +1,7 @@
 ---
 title: "Introgression of novel traits from a wild wheat relative improves drought adaptation in wheat"
 collection: publications
-permalink: /publication/2013-10-01-Introgression-of-novel-traits-from-a-wild-wheat-relative-improves-drought-adaptation-in-wheat
+permalink: /publications/2013-10-01-Introgression-of-novel-traits-from-a-wild-wheat-relative-improves-drought-adaptation-in-wheat
 excerpt: 'This paper looks at the effects of an introgression from <i>Agropyron elongatum</i> into <i>Triticum aestivum</i> on drought tolerance.'
 date: 2013-10-01
 venue: 'Plant Physiology'
