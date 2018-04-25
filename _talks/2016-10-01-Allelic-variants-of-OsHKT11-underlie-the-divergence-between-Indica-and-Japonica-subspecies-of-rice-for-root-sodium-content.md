@@ -7,7 +7,3 @@ venue: "Plant Science Retreat 2016"
 date: 2016-10-01
 location: "Nebraska City, Nebraska"
 ---
-
-[More information here](http://example2.com)
-
-See above.
