@@ -38,15 +38,15 @@ Research Experience
   * Supervisor: Harkamal Walia
   * My research was focused on elucidating the physiological and genetic basis of adaptation to drought and submergence in wheat and maize, respectively.
   
- * September 2009 - August 2011: Undergraduate Research Assistant
+* September 2009 - August 2011: Undergraduate Research Assistant
   * Department of Plant Science
   * Rutgers University, New Brunswick, NJ
-  * Under the supervision of Dr. Richard Merritt, I assisted in the development of a bioreactor system for micropropagation of <i>Lilium spp.<i/>. This system was intended to have applications in the horticulture and nutraceutical industries. Moreover, I worked with Dr. Gojko Jelenkovic in the evaluation and propagation of strawberry varieties.
+  * Under the supervision of Dr. Richard Merritt, I assisted in the development of a bioreactor system for micropropagation of <i>Lilium spp.</i>. This system was intended to have applications in the horticulture and nutraceutical industries. Moreover, I worked with Dr. Gojko Jelenkovic in the evaluation and propagation of strawberry varieties.
   
-  * June 2010 - July 2010: Summer Intern
-    * USDA-ARS Tropical Agriculture Research Station
-    * Mayaguez, PR
-    * During the six-week internship I assisted with daily tasks in the entomology, dry bean genetics, and tropical fruit production groups.
+* June 2010 - July 2010: Summer Intern
+  * USDA-ARS Tropical Agriculture Research Station
+  * Mayaguez, PR
+  * During the six-week internship I assisted with daily tasks in the entomology, dry bean genetics, and tropical fruit production groups.
     
 Publications
 ======
