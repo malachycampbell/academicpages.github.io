@@ -2,7 +2,7 @@
 title: "Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping"
 collection: publications
 permalink: /publications/2018-05-11-Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-high-throughput-phenotyping
-excerpt: 'Here we used several random regression (RR) models with Legendre polynomials for genomic prediction of shoot growth trajectories in rice (<i>Oryza sativa<\i>).'
+excerpt: 'Here we used several random regression (RR) models with Legendre polynomials for genomic prediction of shoot growth trajectories in rice (<i>Oryza sativa</i>).'
 date: 2018-05-11
 venue: 'bioRxiv'
 paperurl: 'http://malachycampbell.github.io/files/Campbell_2018.pdf'
