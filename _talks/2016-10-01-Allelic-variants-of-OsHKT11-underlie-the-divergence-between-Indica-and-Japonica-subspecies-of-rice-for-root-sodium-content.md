@@ -8,6 +8,4 @@ date: 2016-10-01
 location: "Nebraska City, Nebraska"
 ---
 
-[More information here](http://example2.com)
-
-See above.
+Thsi talk summarised our [PLoS Genetics](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006823) paper on HKT1;1.
