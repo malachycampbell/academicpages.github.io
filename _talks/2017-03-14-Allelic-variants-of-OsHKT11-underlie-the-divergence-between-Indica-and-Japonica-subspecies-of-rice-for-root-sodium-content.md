@@ -8,6 +8,4 @@ date: 2017-03-14
 location: "Lincoln, Nebraska"
 ---
 
-[More information here](http://example2.com)
-
-This is a presentation summarising the results of the PLoS Genetics paper where we identified <i>HKT1;1</i> as a major regulator of natural variation for root sodium conent.
+This is a presentation summarising the results of our [PLoS Genetics paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006823) where we identified <i>HKT1;1</i> as a major regulator of natural variation for root sodium conent.
