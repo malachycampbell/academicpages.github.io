@@ -8,6 +8,4 @@ date: 2016-04-06
 location: "Lincoln, Nebraska"
 ---
 
-[More information here](http://example2.com)
-
-See above.
+See [Campbell et al (2017) in PLoS Genetics](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006823) for the complete story.
