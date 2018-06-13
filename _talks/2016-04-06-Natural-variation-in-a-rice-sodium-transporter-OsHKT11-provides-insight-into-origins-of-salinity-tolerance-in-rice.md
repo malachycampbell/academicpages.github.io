@@ -7,3 +7,7 @@ venue: "University of Nebraska Animal Breeding and Genetics Seminars"
 date: 2016-04-06
 location: "Lincoln, Nebraska"
 ---
+
+[More information here](http://example2.com)
+
+See above.

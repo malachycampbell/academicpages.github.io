@@ -7,3 +7,7 @@ venue: "Trait Prediction in Agriculture, Department of Statistics, University of
 date: 2018-04-19
 location: "Lincoln, Nebraska"
 ---
+
+[More information here](http://example2.com)
+
+This presentation discussed the my current research in genomic prediction with Gota Morota. 
