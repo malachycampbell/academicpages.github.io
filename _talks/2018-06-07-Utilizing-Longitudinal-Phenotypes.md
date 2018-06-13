@@ -10,4 +10,4 @@ location: "Waterville Valley, New Hampshire"
 
 [More information here](http://example2.com)
 
-Here I presented a study where we applied the random regression genomic prediction approach to select accessions with contrasting drought responses for high-resolution phenotyping.
+Here I presented a study where we applied the random regression genomic prediction approach outlined [here](https://www.biorxiv.org/content/early/2018/05/11/319897) to select accessions with contrasting drought responses for high-resolution phenotyping.
