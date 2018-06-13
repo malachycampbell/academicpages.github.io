@@ -57,8 +57,10 @@ Talks
   
 Posters
 ======
+* Utilizing Longitudinal Phenotypes Derived from High Throughput Phenotyping to Study and Improve Adaptation to Water Limitation in Rice. Gordon Research Conference - Salt and Water Stress in Plants. June 2018. Waterville Valley, NH.
+* Utilizing Longitudinal Phenotypes to Study and Improve Adaptation to Water Limitation in Rice. Plant and Animal Genome Conference - 2018. January 2018. San Diego, CA. 
 * Allelic variants of OsHKT1;1 underlie the divergence between Indica and Japonica subspecies of rice (Oryza sativa) for root sodium content. Plant Science Retreat 2016. October 2016. UNL Center for Plant Science Innovation. Nebraska City, NE.
-* Examining the genetic architecture of salinity-induced growth responses in rice (Oryza sativa). Plant Science Symposium. October 2015. UNL Center For Plant Science Innovation. Lincoln, NE.
+* Examining the genetic architecture of salinity-induced growth responses in rice (Oryza sativa). Plant Breeding Symposium. October 2015. UNL Center For Plant Science Innovation. Lincoln, NE.
 * Assessing Flooding Tolerance in a Maize Nested Association Mapping (NAM) Population. Plant Science Retreat 2012. October 2012. UNL Center for Plant Science Innovation. Nebraska City, NE.
   
 Awards
@@ -88,7 +90,7 @@ Skills
   * PCR, real-time PCR, electrophoresis
   * Molecular cloning
   * Agrobacterium-mediated transformation: rice and Arabidopsis
-  * Histology: paran embedding and sectioning
+  * Histology: parafin embedding and sectioning
   
  * Computational Skills
   * Operating Systems: LINUX, OS X, Windows
