@@ -24,7 +24,7 @@ Research Experience
 * September 2017 - Current: Postdoctoral Researcher
   * Department of Animal Science, University of Nebraska - Lincoln
   * Supervisor: Gota Morota
-  * Currently, I am developing models for genomic prediction of longitudinal traits derived from high-throughput phenotyping platforms.
+  * Currently, I am developing methods for genomic prediction and GWAS of longitudinal traits derived from high-throughput phenotyping platforms.
   
 * March 2013 - August 2017: Graduate Research Assistant (Ph.D.)
   * Department of Agronomy and Horticulture, University of Nebraska - Lincoln
