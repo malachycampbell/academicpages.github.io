@@ -13,6 +13,7 @@ Education
 ======
 * B.S., Plant Science, Specialization in Research, Rutgers University, May 2010
   * Advisors: Drs. Richard Merritt, Gojko Jelenkovic
+  * Graduated summa cum laude
 * Ph.D., Agronomy, Specialization in Plant Breeding and Genetics, University of Nebraska - Lincoln, August 2017
   * Dissertation: "Dissecting the genetic architecture of salinity responses in rice (<i>Oryza sativa</i>)".
   * Advisor: Dr. Harkamal Walia
