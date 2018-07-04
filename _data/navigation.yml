@@ -8,3 +8,6 @@ main:
     
   - title: "CV"
     url: /cv/
+  
+  - resources: "Resources"
+    url: /resources/
