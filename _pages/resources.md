@@ -5,8 +5,6 @@ permalink: /resources/
 author_profile: true
 ---
 
-{% include base_path %}
-
 [Random regression genomic prediction](malachycampbell/malachycampbell.github.io/Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-HTP/README.md)
 ======
 
