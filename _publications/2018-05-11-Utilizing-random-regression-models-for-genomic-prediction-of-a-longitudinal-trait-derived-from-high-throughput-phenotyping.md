@@ -6,11 +6,11 @@ excerpt: 'Here we used several random regression (RR) models with Legendre polyn
 date: 2018-05-11
 venue: 'Plant Direct'
 paperurl: 'http://malachycampbell.github.io/files/Campbell_2018.pdf'
-citation: 'Campbell, M.T., H. Walia, and G. Morota. 2018. Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping. Plant Direct (In Press)'
+citation: 'Campbell, M.T., H. Walia, and G. Morota. 2018. Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping. Plant Direct 2(9): e00080. [https://doi.org/10.1002/pld3.80](https://doi.org/10.1002/pld3.80)'
 ---
 
 <a href='http://malachycampbell.github.io/files/Campbell_2018.pdf'>Download paper here</a>
 
 This paper utilized a random regression approach for genomic prediction of longitudinal shoot growth trajectories in rice.
 
-Campbell, M.T., H. Walia, and G. Morota. 2018. Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping. Plant Direct (In Press)
+Campbell, M.T., H. Walia, and G. Morota. 2018. Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping. Plant Direct 2(9): e00080. [https://doi.org/10.1002/pld3.80](https://doi.org/10.1002/pld3.80)
