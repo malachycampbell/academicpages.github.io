@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
-<img align="left" width="244" height="200" src= /images/Hussain_2018.png>
+<img align="right" width="244" height="200" src= /images/Hussain_2018.jpg>
 
 <b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](/_publications/2018-8-1-ShinyAIM.md) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
@@ -14,6 +14,8 @@ We developed a nice tool to easily visualize multiple manhattan plots. This is p
   <i>Currently under review at Plant Direct</i>
 
 <br>
+
+<img align="right" width="246" height="200" src= /images/Du_2018.jpg>
 
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](/_publications/2018-6-29-Using-LASSO-in-gene-co-expression.md) </b> Du, Q., <b>Campbell, M.T.</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
 
