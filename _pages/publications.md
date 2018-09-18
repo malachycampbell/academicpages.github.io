@@ -6,7 +6,7 @@ author_profile: true
 
 ## Pre-prints
 
-![Test](http://malachycampbell.github.io/images/Hussain_2018.jpg =244x200){: .align-right}
+![Test](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right}
 
 <b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
