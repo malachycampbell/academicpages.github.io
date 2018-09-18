@@ -1,0 +1,197 @@
+---
+title: "Cleaning up the phenotype files"
+author: "Malachy Campbell"
+date: "8/7/2017"
+output:
+  rmdformats::html_clean:
+    fig_width: 6
+    fig_height: 6
+    highlight: kate
+    thumbnails: true
+    lightbox: true
+    gallery: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = '~/Desktop/RR')
+```
+
+#Background
+The purpose of this script is to check for outlier plants (e.g. those exhibiting abnormal growth), remove these abnormal plants in the dataset,and write the cleaned data to a file.
+
+```{r load packages, echo=T}
+library(reshape2)
+library(plyr)
+library(stringr)
+```
+
+#Outlier detection
+Here, I will use the 1.5 IQR rule to identify outliers. For each plant that is flagged, I check the plot of the drought and control plants to look for abnormal behavior (i.e. no growth/straight lines, sharp decline in growth, etc.). Those with abnormal behavior were removed.
+```{r load data, echo=T}
+#Load data
+allData <- read.csv("Phenotypes_raw/AllExp.csv")
+
+#Drop all the unnecessary columns
+PSA.df <- allData[c("Exp", "Snapshot.ID.Tag", "Genotype.ID", "Replicate", "Key", "DayOfImaging", "Projected.Shoot.Area")]
+rm(allData)
+```
+
+```{r outlier detection, echo=T}
+#Flags large plants
+outlier.detection.up <- function(x){
+  lowerq = quantile(x)[2]
+  upperq = quantile(x)[4]
+  iqr = upperq - lowerq 
+  extreme.threshold.upper = (iqr * 1.5) + upperq
+  return(extreme.threshold.upper)
+}
+
+#Flags small plants
+outlier.detection.low <- function(x){
+  lowerq = quantile(x)[2]
+  upperq = quantile(x)[4]
+  iqr = upperq - lowerq 
+  extreme.threshold.lower = lowerq - (iqr * 1.5)
+  return(extreme.threshold.lower)
+}
+
+#Apply the outliers functions to each day and experiment. Here we will determine the threshold for each day and experiment
+ddout <- ddply(PSA.df, .(Exp, DayOfImaging), summarise,
+            Upper=outlier.detection.up(Projected.Shoot.Area),
+            Lower=outlier.detection.low(Projected.Shoot.Area))
+
+#Now go through the dataset and flag the outliers by comparing the PSA values for each plant and the thresholds determined above.
+out.list=list()
+for (i in 1:3){
+  tmp.e <- PSA.df[PSA.df$Exp %in% paste0("E", i) ,] #Subsets the PSA dataset for each experiment
+  out.e <- ddout[ddout$Exp %in% paste0("E", i) ,] #Subsets the outlier dataset for each experiment
+  
+  for(j in 1:20){
+    #Subset for each day of imaging
+    tmp.d <- tmp.e[tmp.e$DayOfImaging %in% j ,] 
+    out.d <- out.e[out.e$DayOfImaging %in% j ,]
+       
+    foo <- tmp.d[tmp.d$Projected.Shoot.Area <= out.d$Lower ,]
+    foo <- rbind(foo, tmp.d[tmp.d$Projected.Shoot.Area >= out.d$Upper ,])
+       
+    out.list[[paste0(i,j)]] <- foo$Key
+    }
+}
+
+out.list=unique(unlist(out.list))
+
+#Generate plots for plants flagged as outliers
+#pdf("RR/Phenotypes_raw/outliersPSA.pdf")
+#for (i in 1:length(out.list)){
+#  tmp <- PSA.df[PSA.df$Key %in% out.list[i] ,]
+  
+#  plot(tmp$DayOfImaging, 
+#       tmp$Projected.Shoot.Area, 
+#      type="l", ylim=c(0, 1126838), 
+#       main=out.list[i], col="red")
+#  }
+#dev.off()
+
+#These are the plants that had abnormal growth patterns
+bad.plants <- c("E1_UNL068_1",
+             "E1_UNL137_2",
+             "E1_UNL146_1",
+             "E1_UNL015_1",
+             "E1_UNL015_1",
+             "E1_UNL001_1",
+             "E1_UNL248_2",
+             "E1_UNL047_1",
+             "E1_UNL298_1",
+             "E1_UNL042_1",
+             "E1_UNL361_1",
+             "E1_UNL215_2",
+             "E2_UNL120_2",
+             "E2_UNL146_2",
+             "E2_UNL232_2",
+             "E2_UNL001_1",
+             "E2_UNL299_1",
+             "E2_UNL210_1", 
+             "E3_UNL322_1", 
+             "E1_UNL142_2", 
+             "E2_UNL323_1")
+
+PSA.df <- PSA.df[!PSA.df$Key %in% bad.plants ,]
+```
+
+#Write cleaned data to files
+A total of 378 accessions were phenotyped for this project. The accessions were assigned an identified in the form of "UNLXXX". Here we will link those UNL IDs to the RDP1 identifiers ("NSFTV_XX""). We will drop the accessions without an NSFTV ID. 
+```{r get NSFTV.IDs for all genotypes, eval = F}
+#Read in the ID list
+Acc.ID <- read.csv("Phenotypes_raw/IdList.csv")
+
+#Merge with the phenotype file
+PSA.df <- merge(PSA.df, Acc.ID, by="Genotype.ID", all=F)
+
+#Drop accessions without and NSFTV ID
+PSA.df <- PSA.df[!PSA.df$NSFTV.ID %in% "NSFTV_NA" ,]
+length(unique(PSA.df$NSFTV.ID)) #357 accessions
+
+PSA.df$Genotype.ID=NULL
+
+PSA.df <- PSA.df[PSA.df$DayOfImaging > 0 ,]
+PSA.df <- PSA.df[PSA.df$DayOfImaging < 21 ,]
+
+#Drop useless columns
+PSA.df <- PSA.df[c("NSFTV.ID", "Exp", "Replicate", "DayOfImaging", "Projected.Shoot.Area")]
+
+colnames(PSA.df)[5] <- "PSA"
+
+#Since some accessions only have a single replicate we will pad the phenotype data with NA's. This way all accessions have an equal number of observations. This is a pretty hacky way of doing it, but it works.
+PSA.df <- dcast(PSA.df, NSFTV.ID ~ DayOfImaging + Replicate + Exp, value.var = "PSA")
+
+PSA.df <- melt(PSA.df, id.vars="NSFTV.ID")
+
+PSA.meta <- str_split_fixed(PSA.df$variable, "_", 3)
+
+PSA.df <- data.frame(NSFTV.ID = PSA.df$NSFTV.ID, Exp = PSA.meta[,3], 
+                     Rep = PSA.meta[,2], DayOfImaging = PSA.meta[,1], PSA = PSA.df$value)
+
+
+PSA.df$DayOfImaging <- as.character(PSA.df$DayOfImaging)
+
+PSA.df$DayOfImaging <- as.numeric(PSA.df$DayOfImaging)
+
+PSA.df <- PSA.df[order(PSA.df$NSFTV.ID, PSA.df$Exp, PSA.df$Rep, PSA.df$DayOfImaging) ,]
+
+write.csv(PSA.df, "RR/Phenotypes_cleaned/PSA.cleaned.csv", row.names=F)
+
+#For the TP analyses we will need a file that is in a wide format (e.g. PSA at each day will be in each column)
+
+PSA.df <- dcast(PSA.df, NSFTV.ID + Exp + Rep ~ DayOfImaging, value.var = "PSA")
+
+colnames(PSA.df)[4:ncol(PSA.df)] = paste0("Y", colnames(PSA.df)[4:ncol(PSA.df)])
+
+write.csv(PSA.df, "TP/Phenotypes_cleaned/PSA.cleaned.csv", row.names=F)
+```
+
+
+#Plot mean PSA
+This is the code used to make figure 2 in the manuscript.
+```{r plot mean, echo=T}
+PSA.df <- read.csv("RR/FinalFiles/PSA.cleaned.csv")
+
+meanPSA <- ddply(PSA.df, .(DayOfImaging), summarise, Mean = mean(PSA, na.rm = T), SD = sd(PSA, na.rm = T))
+
+#pdf("RR/Figures/PSA.pdf", h=2.1, w=3.5, useDingbats = F)
+#par(mar=c(3,3,1,.2), mgp=c(1.8,0.5,0), ps=9)
+
+plot(meanPSA$DayOfImaging, meanPSA$Mean, 
+     col="lightsteelblue4", 
+     ylim=c(0, 550000), pch=19, cex=0.5, 
+     ylab="PSA", xlab="Day of Imaging")
+
+lines(meanPSA$DayOfImaging, meanPSA$Mean, 
+      col="lightsteelblue4", cex=0.5)
+
+polygon(c(meanPSA$DayOfImaging, rev(meanPSA$DayOfImaging)), 
+        c(meanPSA$Mean - meanPSA$SD, rev(meanPSA$Mean + meanPSA$SD)), 
+        col = rgb(0.4313725,0.4823529,0.5450980,alpha=0.3), 
+        border = rgb(0.4313725,0.4823529,0.5450980,alpha=0.3))
+
+#dev.off()
+```

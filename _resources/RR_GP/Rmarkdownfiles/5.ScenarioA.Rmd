@@ -1,0 +1,500 @@
+---
+title: "Scenario A"
+author: "Malachy Campbell"
+date: "8/7/2017"
+output:
+  rmdformats::html_clean:
+    fig_width: 6
+    fig_height: 6
+    highlight: kate
+    thumbnails: true
+    lightbox: true
+    gallery: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = '~/Desktop/RR/')
+```
+
+#Background
+In scenario A, PSA for 357 lines at all twenty time points were used to fit a RR model and phenotypes were predicted for a set of lines without phenotypic records. This can be thought of as a standard genomic selection approach, where the training set is a set of existing lines with phenotypic records and the test population as a new set of lines without records. Here the aim is to determine whether the longitudinal RR approach provides greater prediction accuracy than a cross-sectional GS approach in which a mixed model is fit at each time point.
+
+To assess the accuracy of gBLUPs for the TP GS as well as scenarios A, C, and D, a two-fold cross validation approach was used. Briefly, the 357 lines were split into two sets, with one serving as a training set with known phenotypes and the second serving as a testing set with unknown phenotypes. Since the number of lines were not even the remaining line was assigned to the training set. The accuracy of prediction was assessed by comparing predicted gBLUPs with observed PSA at each of the three experiments using Pearson's correlation method. The lines were randomly assigned to each fold, and the process was repeated 20 times. For each fold, the average correlation over the three experiments was used.
+
+#Generate the dataset for cross validation
+This clunky chunk of code is to prepare a dataset for cross validation. Here, half of the accessions are randomly selected, and the obervations for these accessions are masked. N controls the number of resamplings that are done. For each resampling run the columns of masked observations are added to the original dataframe and named Y1, Y2... This data will be used for CV for thr RR approach as well as the TP approach, However for TP we will convert the dataset to a wide format, and write a seperate file for each resampling run.
+
+```{r CV dataset for RR, eval = F}
+PSA.df <- read.csv("~/Desktop/RR/RR/FinalFiles/PSA.cleaned.csv")
+
+##Get the accession names
+Acc <- unique(PSA.df$NSFTV.ID)
+
+#Set the number of resampling runs
+N <- 10
+for (i in 1:N){
+  
+  set.seed(i)
+  ########################################
+  #1. Split the accessions into two folds#
+  ########################################
+  
+  ##Create a new dataframe to mask observations
+  new.ph <- PSA.df
+  
+  ##Assign accessions to folds
+  setlabels <- sample(1:2, size=length(Acc), replace = T)
+  names(setlabels) <- Acc
+  setlabels <- as.matrix(setlabels, ncol = 1, nrow = length(Acc))
+  
+  ##Merge the original dataframe and the column with fold IDs
+  new.ph <- merge(new.ph, setlabels, by.x = "NSFTV.ID", by.y = 0, all = T)
+  colnames(new.ph)[ncol(new.ph)] <- "Fold"
+  
+  ##Make a fold x n matrix that has all the origninal observations 
+  new.y <- as.matrix(new.ph[,5, drop = F]) %*% t(rep(1, 2))
+  colnames(new.y) <- paste0("Y", 1:2)
+  
+  ##merge the fold x n matrix and the phenotypic data
+  new.ph1 <- cbind(new.ph, new.y)[,ncol(new.ph):(ncol(new.ph)+2)]
+  
+  #######################################
+  #2. Mask the observations in each fold#
+  #######################################
+  ##This function will assign NA to all obervations from the accessions belonging to a given fold
+  missingInFold <- function(r){
+    fold = r["Fold"]
+    index = fold + 1
+    r[index] = NA
+    return(r)
+  }
+  
+  ##Assign the NA's
+  new.ph2 <- t(apply(new.ph1, 1, missingInFold))
+  
+  ##Merge the masked dataset with the original dataframe
+  if(i == 1){
+    final <- cbind(new.ph[,1:(ncol(new.ph)-1)], new.ph2[,2:3])
+  }else{
+    final <- cbind(final, new.ph2[,2:3])
+  }
+}
+
+```
+
+##CV file for RR approach
+Here, the RR CV file is ordered by NSFTV.ID, Experiment, Rep, and DayOfImaging, and wrtie it to a file.
+```{r write RR CV file, eval = F}
+###############################################
+#3. Order the dataframe and write it to a file#
+###############################################
+
+final <- final[order(final$NSFTV.ID, final$Exp, final$Rep, final$DayOfImaging) ,]
+colnames(final)[6:ncol(final)] <- paste0("Y", 1:(N*2))
+write.csv(final, "~/Desktop/RR/ScenarioA/RR/RR_CV.csv", row.names = F)
+```
+
+##CV file for TP approach
+Here, the same file for RR CV is loaded, and converted to a wide format where each column is a day of imaging. Finally, a loop is used to split the file based on sampling run and a file is writeen for each.
+```{r write TP CV file, eval = F}
+library(reshape2)
+
+final <- read.csv("~/Desktop/RR/ScenarioA/RR/RR_CV.csv")
+
+#Convert it to wide format
+final <- melt(final, id.vars=c("NSFTV.ID", "Rep", "Exp", "DayOfImaging"))
+final <- dcast(final, NSFTV.ID + Rep + Exp + variable ~ DayOfImaging)
+colnames(final)[4] = "Run"
+
+final <- final[order(final$NSFTV.ID, final$Exp, final$Rep) ,]
+
+colnames(final)[5:ncol(final)] <- paste0("D", 1:20)
+
+#Split up the dataset and write a seperate file for each run
+Sets <- unique(final$Run)
+for (i in 1:length(Sets)){
+  tmp <- final[final$Run == Sets[i] ,]
+  write.csv(tmp, paste0("~/Desktop/RR/ScenarioA/TP/", Sets[i], ".csv"), row.names=F)
+}
+
+write.csv(final, "~/Desktop/RR/ScenarioA/TP/TP_CV.csv", row.names=F)
+```
+
+#Running asreml for CV
+##RR approach
+Since the RR model can take quite some time to run, CV was done on our computing cluster at UNL. Four jobs were created, where the RR model was fit for five resampling runs. Below is an example .as file, as well as the slurm script used to submit the job.
+
+```{asreml RR CV, eval = F}
+!RENAME !ARG Y1 Y2 Y3 Y4 Y5
+RR scenario A
+ NID !A
+ PSA !/100000
+ DayOfImaging 20 !I
+ Rep 2
+ Exp !A
+ Y1 !/100000
+ Y2 !/100000
+ Y3 !/100000
+ Y4 !/100000
+ Y5 !/100000
+ Y6 !/100000
+ Y7 !/100000
+ Y8 !/100000
+ Y9 !/100000
+ Y10 !/100000
+ Y11 !/100000
+ Y12 !/100000
+ Y13 !/100000
+ Y14 !/100000
+ Y15 !/100000
+ Y16 !/100000
+ Y17 !/100000
+ Y18 !/100000
+ Y19 !/100000
+ Y20 !/100000
+G2.grm
+RR_CV.csv !SKIP 1 !MAXITER 1000 !EXTRA 100 !WORKSPACE 6144 !ASUV
+
+!ASSIGN USe !< !INIT
+1.37E-03 1.22E-03 2.07E-03 3.32E-03 5.32E-03 7.88E-03 1.18E-02 1.53E-02 2.04E-02 2.76E-02 4.03E-02 5.80E-02 8.19E-02 0.114627 0.164452 0.224128 0.336555 0.522506 0.790597 1.17392
+!>
+!ASSIGN USg !< !INIT
+0.629183
+0.495574 0.394557
+0.129607 0.104540 0.281278E-01
+!>
+!ASSIGN USp !< !INIT
+0.594161E-01
+0.392295E-01 0.260640E-01
+!>
+$1 ~ mu leg(DayOfImaging,2) !r us(leg(DayOfImaging,1) $USp).Exp us(leg(DayOfImaging,2) $USg).grm(NID) !f mv
+residual id(2142).idh(DayOfImaging $USe)
+```
+
+```{slurm script for RR CV, eval = F}
+#!/bin/bash
+#SBATCH --time=24:00:00
+#SBATCH --mem=4gb
+#SBATCH --ntasks-per-node=1
+#SBATCH --job-name=ASREML_Y1
+
+errlog="logs/log_${SLURM_JOB_ID}.err"
+outlog="logs/log_${SLURM_JOB_ID}.out"
+
+module load asreml
+
+asreml CV1.as
+```
+
+##TP approach
+For each of the 20 resampling runs a .as file was created. Below is an example for one run.
+```{asreml TP CV, eval = F}
+TP CV
+ ID !A
+ Rep 2
+ Exp !A
+ Run !A
+ D1 !/100000
+ D2 !/100000
+ D3 !/100000
+ D4 !/100000
+ D5 !/100000
+ D6 !/100000
+ D7 !/100000
+ D8 !/100000
+ D9 !/100000
+ D10 !/100000
+ D11 !/100000
+ D12 !/100000
+ D13 !/100000
+ D14 !/100000
+ D15 !/100000
+ D16 !/100000
+ D17 !/100000
+ D18 !/100000
+ D19 !/100000
+ D20 !/100000
+G2.grm
+Y1.csv !SKIP 1 !MAXITER 200 !WORKSPACE 6144
+
+!CYCLE D1 D2 D3 D4 D5 D6 D7 D8 D9 D10,
+D11 D12 D13 D14 D15 D16 D17 D18 D19 D20
+
+$I ~ mu !r grm(ID) Exp !f mv
+```
+
+This script will run CV for each of the 20 .as files.
+```{bash TP CV run, eval = F}
+cd ~/Desktop/RR/ScenarioA/TP/
+
+asreml *.as
+```
+
+#Cross validation results
+##RR Approach
+For the CV of the RR model, 20 files were written for each resampling run. Each file consists of the BV for the legendre polynomials. Recall for the random regressiuon model a second order polynomal was used to model the additive genetic component, thus there will be three BVs for each accession. For a given line, $j$, at time $t$ the gBLUPs can be obtained by $\text{gBLUP}_{jt} = \phi_t\hat{u}_j$; where $\phi_t$ is the row vector of the matrix of Legendre polynomials of order 2.
+
+The accuracy of prediction was assessed by comparing predicted gBLUPs with observed PSA at each of the three experiments using Pearson's correlation method. For each fold, the average correlation over the three experiments was used.
+
+The functions below were adapted from Mrode (2005) by [Gota Morota](http://morotalab.org/Mrode2005/rr/rr.html#section00020000000000000000).
+```{r define functions for RR}
+##Return coefficient matrix (lambda) of n-th order Legendre polynomials. Scaling method implemented by Gengler et. al. (1999) converts constant Legendre polynomial coefficients into 1
+`legendre` <-
+  function(n, gengler){
+    
+    if (nargs()==1){
+      gengler <- TRUE	
+    }
+    
+    if (gengler != TRUE & gengler != FALSE){
+      gengler=TRUE	
+    }
+    
+    N <- n+1
+    L <- matrix(0,nrow=N, ncol=N)
+    
+    for(i in (1:N)){
+      if(i==1){
+        L[i,i] <- 1
+      }
+      else if(i==2){
+        L[i,i] <- 1
+      }
+      else  {
+        tmp <- L[i-1,]
+        tmp2 <- as.numeric()
+        tmp2 <- c(0,tmp[1:(N-1)])
+        L[i,] <- (1/(i-2+1))*( (2*(i-2) + 1)*tmp2 -(i-2)*L[i-2,] )
+      }
+    }
+    
+    # Normalize
+    for (j in (1:N)){	
+      L[j,] <- (sqrt( (2*(j-1)+1)/2)  )*L[j,]
+    }
+    
+    
+    # Gengler (1999)
+    if (gengler==TRUE){
+      L <- sqrt(2)*L
+    }
+    
+    return(L)
+    
+  }
+
+##Given time points covariate and order of fit for Legendre polynomials, return matrix 'M' containing the polynomials of standardized time. 'M' is order t (number of time points) by k (order of Legendre polynomials)
+stdtime <- function(t, n, tmax, tmin){
+  if(missing(tmax)) {
+    tmax <- t[which.max(t)]
+  }
+  if(missing(tmin)) {
+    tmin <- t[which.min(t)]
+  }
+  
+  N <- n+1
+  M <- matrix(0, nrow=length(t), ncol=N)
+  a <- -1 + 2*(t-tmin)/(tmax - tmin)
+  M[,1] <- 1
+  
+  for (i in 2:N){
+    M[,i] <- a^(i-1)
+  }
+  
+  return(M)
+}
+```
+
+
+```{r RR CV get gBLUPs for each run}
+#This code will calucalte the gBLUPs at each time point from the asreml .sln files.
+library(plyr)
+library(reshape2)
+
+setwd("~/Desktop/RR/ScenarioA/RR/")
+
+final <- read.csv("~/Desktop/RR/ScenarioA/RR/RR_CV.csv")
+
+PSA <- final[1:5]
+PSA <- ddply(PSA, .(NSFTV.ID, Exp, DayOfImaging), summarise, PSA=mean(PSA, na.rm = T))
+PSA <- dcast(PSA, NSFTV.ID + DayOfImaging ~ Exp)
+PSA <- PSA[order(PSA$DayOfImaging, PSA$NSFTV.ID) ,]
+
+#Create an object that lists the file names for all CV runs. Recall that the CV was split up into four batches, each with 5 jobs.
+Files <- c(paste0("CV1Y", 1:5, ".sln"),
+           paste0("CV2Y", 6:10, ".sln"),
+           paste0("CV3Y", 11:15, ".sln"),
+           paste0("CV4Y", 16:20, ".sln"))
+
+for (i in 1:length(Files)){
+  sln <- read.delim(Files[i], sep="", header=T)
+  
+  #gBLUPs for legendre polynomials
+  g.hat.y <- t(cbind(sln[grep("1.NSFTV", sln$Level) ,][,3],
+                     sln[grep("2.NSFTV", sln$Level) ,][,3],
+                     sln[grep("3.NSFTV", sln$Level) ,][,3]))
+  
+  colnames(g.hat.y) <- sub("1.", "", sln[grep("1.NSFTV", sln$Level) ,][,2])
+  
+  #Calculated gBLUPs at each time point
+  Phi <- stdtime(1:20, 2) %*% t(legendre(2, gengler = F))
+  ghat.t.y <- t(apply(g.hat.y, 2, function (x) Phi %*% x))
+  colnames(ghat.t.y) <- 1:20
+  gBLUP <- melt(ghat.t.y)
+  colnames(gBLUP) <- c("NSFTV.ID", "DayOfImaging", "gBLUP")
+  
+  if(i == 1 ){
+    final.blups <- gBLUP
+  }else{
+    final.blups <- cbind(final.blups, gBLUP[,3])
+  }
+}
+
+#This file contains all the gBLUP values for ach accession, run and time point
+colnames(final.blups)[3:ncol(final.blups)] <- sub(".sln", "", sub("CV[:1-4:]", "", Files) )
+```
+
+```{r RR CV results}
+library(plyr)
+
+#Now we do the correlation and get the actual CV results
+Cor.res <- matrix(0, ncol=20, nrow=20)
+
+for(j in 1:length(Files)){
+  tmp <- final[c("NSFTV.ID", colnames(final.blups)[j+2])]
+  colnames(tmp)[2] <- "Y"
+  tmp <- ddply(tmp, .(NSFTV.ID), summarise, Cnt=sum(is.na(Y)))
+  
+  #Find which accessions are in the test set
+  test.acc <- tmp[ tmp$Cnt == 120 ,]$NSFTV.ID
+  
+  #Merge the gBLUPs and observed PSA datasets
+  tmp.df <- merge(PSA, final.blups, by=c("DayOfImaging", "NSFTV.ID"))
+  
+  #Only keep the data for individuals in the testing set
+  tmp.df <- tmp.df[tmp.df$NSFTV.ID %in% test.acc ,]
+  tmp.df <- cbind(tmp.df[1:5], tmp.df[, (j + 5)])
+  tmp.df <- tmp.df[order(tmp.df$DayOfImaging, tmp.df$NSFTV.ID) ,]
+  colnames(tmp.df)[6] <- "gBLUP"
+  
+  #Do the correlations
+  res <- rbind(ldply(dlply(tmp.df, .(DayOfImaging), function(x) cor(x$E1, x$gBLUP, use="complete.obs") ) )[,2],
+               ldply(dlply(tmp.df, .(DayOfImaging), function(x) cor(x$E2, x$gBLUP, use="complete.obs") ) )[,2],
+               ldply(dlply(tmp.df, .(DayOfImaging), function(x) cor(x$E3, x$gBLUP, use="complete.obs") ) )[,2] )
+  
+  #Store the results
+  Cor.res[,j] <- colMeans(res)
+}
+```
+
+##TP approach
+For the CV at each individual time point, 20 files were written for each resampling and one for PSA. Each file has the day of imaging in seperate columns. Asreml loops over each day and writes the random coefficients to a .sln file. Each section in the .sln file is a time point. Therefore, 
+each resampling run will need to be read into R and compared to the predicted PSA from the full, unmasked dataset.
+
+```{r TP CV results}
+library(plyr)
+library(reshape2)
+
+#Read in the CV file
+final <- read.csv("~/Desktop/RR/ScenarioA/TP/TP_CV.csv")
+
+PSA <- final[1:5]
+PSA <- ddply(PSA, .(NSFTV.ID, Exp, DayOfImaging), summarise, PSA=mean(PSA, na.rm = T))
+PSA <- dcast(PSA, NSFTV.ID + DayOfImaging ~ Exp)
+PSA <- PSA[order(PSA$DayOfImaging, PSA$NSFTV.ID) ,]
+
+
+#Split up fo each experiment
+E1 <- dcast(PSA[c("NSFTV.ID", "DayOfImaging", "E1")], NSFTV.ID ~ DayOfImaging)
+row.names(E1) <- E1$NSFTV.ID
+E1$NSFTV.ID <- NULL
+
+E2 <- dcast(PSA[c("NSFTV.ID", "DayOfImaging", "E2")], NSFTV.ID ~ DayOfImaging)
+row.names(E2) <- E2$NSFTV.ID
+E2$NSFTV.ID <- NULL
+
+E3 <- dcast(PSA[c("NSFTV.ID", "DayOfImaging", "E3")], NSFTV.ID ~ DayOfImaging)
+row.names(E3) <- E3$NSFTV.ID
+E3$NSFTV.ID <- NULL
+
+
+#Cross validation
+setwd("~/Desktop/RR/ScenarioA/TP/")
+files <- list.files(pattern=".sln")
+#Matrix to store results
+Acc.mat <- matrix(0, ncol=20, nrow=20)
+
+for (i in 1:length(files)){
+  #Each sln file will have the all the gBLUPs for all accessions at each time point. Each time point will be in a seperate section. The 'Chunks' part of the code finds where these sections end.
+  sln <- read.delim(files[i], sep="", header=T)
+  Chunks <- which(sln$Model_Term == "Model_Term")
+  
+  #Matrix to store gBLUPs
+  Y.mat <- matrix(0, ncol=20, nrow=357)
+  
+  tmp.final <- data.frame(NSFTV.ID = final$NSFTV.ID,
+                          Run = final[, colnames(final) %in% sub(".sln", "", files[i])] )
+  #Find out which accessions are part of the testing set
+  tmp.final <- ddply(tmp.final, .(NSFTV.ID), summarise, Cnt=sum(is.na(Run)) )
+  test.acc <- tmp.final[ tmp.final$Cnt == 120 ,]$NSFTV.ID
+  
+  #Get the gBLUPs for each day and store them in Y.mat
+  for (j in 1:20){
+    if(j == 1){
+      tmp.sln <- sln[1:(Chunks[j]-1) ,]
+      Y.mat[,j] <- matrix(as.numeric(tmp.sln[grep("NSFTV", tmp.sln$Level) ,][,3]), ncol=1, nrow=357)
+      row.names(Y.mat) <- tmp.sln[grep("NSFTV", tmp.sln$Level) ,][,2]
+    }else{
+      if(j < 20){
+        tmp.sln <- sln[Chunks[j-1]:(Chunks[j]-1) ,]
+        Y.mat[,j] <- matrix(as.numeric(tmp.sln[grep("NSFTV", tmp.sln$Level) ,][,3]), ncol=1, nrow=357)
+      }else{
+        tmp.sln <- sln[Chunks[j-1]:nrow(sln) ,]
+        Y.mat[,j] <- matrix(as.numeric(tmp.sln[grep("NSFTV", tmp.sln$Level) ,][,3]), ncol=1, nrow=357)
+      }
+    }
+  }
+  
+  #Get the correlation between predicted and actual PSA at each experiment
+  res <- rbind(diag(cor(Y.mat[row.names(Y.mat) %in% test.acc ,], E1[row.names(E1) %in% test.acc ,], "complete")),
+            diag(cor(Y.mat[row.names(Y.mat) %in% test.acc ,], E2[row.names(E2) %in% test.acc ,], "complete")),
+            diag(cor(Y.mat[row.names(Y.mat) %in% test.acc ,], E3[row.names(E3) %in% test.acc ,], "complete")))
+  
+  #Store the average across experiments in Acc.Mat
+  Acc.mat[,i] <- colMeans(res)
+}
+```
+
+
+##Plot the results
+Here is the code use to generate Figure 5B.
+```{r plot the results}
+Acc.mat.mean <- apply(Acc.mat, 1, mean)
+Acc.mat.sd <- apply(Acc.mat, 1, sd)
+
+Cor.res.mean <- apply(Cor.res, 1, mean)
+Cor.res.sd <- apply(Cor.res, 1, sd)
+
+(mean(Cor.res.mean) - mean(Acc.mat.mean))/mean(Acc.mat.mean)
+
+(Cor.res.mean - Acc.mat.mean)/Acc.mat.mean
+
+#pdf("~/Desktop/RR/RR/Figures/ScenarioA.pdf", h=2.1, w=3.5, useDingbats = F, pointsize = 10)
+#par(mar=c(3,3,1,.2), mgp=c(1.8,0.5,0))
+plot(1:20, Cor.res.mean, ylim=c(0,1), cex=0.3, pch=19, xlab="Day of Imaging", ylab=expression(italic("r")))
+lines(1:20, Cor.res.mean)
+
+segments(1:20, Cor.res.mean - Cor.res.sd, 1:20, Cor.res.mean + Cor.res.sd, lwd=1)
+segments(1:20 - 0.1, Cor.res.mean - Cor.res.sd, 1:20 + 0.1, Cor.res.mean - Cor.res.sd, lwd=1)
+segments(1:20 - 0.1, Cor.res.mean + Cor.res.sd, 1:20 + 0.1, Cor.res.mean + Cor.res.sd, lwd=1)
+
+points(1:20+0.1, Acc.mat.mean, pch=21, cex=0.3, col="grey")
+lines(1:20+0.1, Acc.mat.mean, col="grey", lty=2)
+
+segments(1:20+0.1, Acc.mat.mean - Acc.mat.sd, 1:20+0.1, Acc.mat.mean + Acc.mat.sd, lwd=1, col="grey")
+segments(1:20+0.1 - 0.1, Acc.mat.mean - Acc.mat.sd, 1:20+0.1 + 0.1, Acc.mat.mean - Acc.mat.sd, lwd=1, col="grey")
+segments(1:20+0.1 - 0.1, Acc.mat.mean + Acc.mat.sd, 1:20+0.1 + 0.1, Acc.mat.mean + Acc.mat.sd, lwd=1, col="grey")
+
+legend("bottomright", c("TP", "RR"), col=c("grey", "black"), pch=c(21, 19), lty=c(2, 1), cex=0.6, pt.cex = 0.3)
+#dev.off()
+```

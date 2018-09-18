@@ -1,0 +1,211 @@
+---
+title: "Scenario D"
+author: "Malachy Campbell"
+date: "8/7/2017"
+output:
+  rmdformats::html_clean:
+    fig_width: 6
+    fig_height: 6
+    highlight: kate
+    thumbnails: true
+    lightbox: true
+    gallery: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = '~/Desktop/RR/')
+```
+
+#Background
+The aim of scenario D is to predict shoot biomass at later time points in an independent study. This can be thought of as forecasting for new lines in an independent study. Here, we used publicly available dataset was used in which 359 lines (357 lines in common between the two studies) were phenotyped from 20 to 40 days after transplant, thus a 13 day overlap was available for the two datasets, and a RR model was fitted using phenotypic information from the time points in the first experiment for for the training set, and was used to predict gBLUPs for the remaining  lines in the testing set for a second independent experiment described by [Campbell et al (2017)](https://dl.sciencesocieties.org/publications/tpg/abstracts/10/2/plantgenome2016.07.0064).
+
+As mentioned previously, the accuracy of gBLUPs was assessed using a two-fold cross validation approach. The the 357 lines were split into two sets, with one serving as a training set with known phenotypes and the second serving as a testing set with unknown phenotypes. The accuracy of prediction was assessed by comparing predicted gBLUPs with observed PSA at each of the three experiments using Pearson's correlation method. The lines were randomly assigned to each fold, and the process was repeated 20 times. For each fold, the average correlation over the three experiments was used.
+
+The dataset and ASREML files used for CV was the same as that used for Scenario A. So, for the code used to generate the CV data and fit the RR model, please refer to that code. The code below describes all analyses downstream of fitting the RR model.
+
+#Prepare the phenotypic data from Campbell et al (2017)
+This chunk of code will load the dataset for the independent HT phenotyping experiment. For a full description of the dataset refer to [Campbell et al (2017)](https://dl.sciencesocieties.org/publications/tpg/abstracts/10/2/plantgenome2016.07.0064).
+
+```{r load data from 2017 study, eval = T}
+library(plyr)
+library(reshape2)
+
+Ind.PSA <- read.csv("~/Desktop/RR/ScenarioD/AllExp_cleaned_control.csv")
+Ind.PSA <- ddply(Ind.PSA, .(NSFTV.ID, Exp, DayOfImaging), summarise, PSA=mean(PSA, na.rm=T))
+Ind.PSA <- dcast(Ind.PSA, NSFTV.ID + DayOfImaging ~ Exp)
+Ind.PSA$DayOfImaging <- Ind.PSA$DayOfImaging + 20
+```
+
+#Cross validation results
+Here, we will use the AREML output from Scenario A for CV. This code is very simialr to that used in Scenario A, however the correlation will be done between PSA from the 2017 dataset (Ind.PSA) and preidcted gBLUPs.
+
+The functions below were adapted from Mrode (2005) by [Gota Morota](http://morotalab.org/Mrode2005/rr/rr.html#section00020000000000000000).
+```{r define functions for RR}
+##Return coefficient matrix (lambda) of n-th order Legendre polynomials. Scaling method implemented by Gengler et. al. (1999) converts constant Legendre polynomial coefficients into 1
+`legendre` <-
+  function(n, gengler){
+    
+    if (nargs()==1){
+      gengler <- TRUE	
+    }
+    
+    if (gengler != TRUE & gengler != FALSE){
+      gengler=TRUE	
+    }
+    
+    N <- n+1
+    L <- matrix(0,nrow=N, ncol=N)
+    
+    for(i in (1:N)){
+      if(i==1){
+        L[i,i] <- 1
+      }
+      else if(i==2){
+        L[i,i] <- 1
+      }
+      else  {
+        tmp <- L[i-1,]
+        tmp2 <- as.numeric()
+        tmp2 <- c(0,tmp[1:(N-1)])
+        L[i,] <- (1/(i-2+1))*( (2*(i-2) + 1)*tmp2 -(i-2)*L[i-2,] )
+      }
+    }
+    
+    # Normalize
+    for (j in (1:N)){	
+      L[j,] <- (sqrt( (2*(j-1)+1)/2)  )*L[j,]
+    }
+    
+    
+    # Gengler (1999)
+    if (gengler==TRUE){
+      L <- sqrt(2)*L
+    }
+    
+    return(L)
+    
+  }
+
+##Given time points covariate and order of fit for Legendre polynomials, return matrix 'M' containing the polynomials of standardized time. 'M' is order t (number of time points) by k (order of Legendre polynomials)
+stdtime <- function(t, n, tmax, tmin){
+  if(missing(tmax)) {
+    tmax <- t[which.max(t)]
+  }
+  if(missing(tmin)) {
+    tmin <- t[which.min(t)]
+  }
+  
+  N <- n+1
+  M <- matrix(0, nrow=length(t), ncol=N)
+  a <- -1 + 2*(t-tmin)/(tmax - tmin)
+  M[,1] <- 1
+  
+  for (i in 2:N){
+    M[,i] <- a^(i-1)
+  }
+  
+  return(M)
+}
+```
+
+
+```{r RR CV get gBLUPs for each run}
+#This code will calucalte the gBLUPs at each time point from the asreml .sln files.
+library(plyr)
+library(reshape2)
+
+setwd("~/Desktop/RR/ScenarioA/RR/")
+
+final <- read.csv("~/Desktop/RR/ScenarioA/RR/RR_CV.csv")
+
+#Create an object that lists the file names for all CV runs. Recall that the CV was split up into four batches, each with 5 jobs.
+Files <- c(paste0("CV1Y", 1:5, ".sln"),
+           paste0("CV2Y", 6:10, ".sln"),
+           paste0("CV3Y", 11:15, ".sln"),
+           paste0("CV4Y", 16:20, ".sln"))
+
+for (i in 1:length(Files)){
+  sln <- read.delim(Files[i], sep="", header=T)
+  
+  #gBLUPs for legendre polynomials
+  g.hat.y <- t(cbind(sln[grep("1.NSFTV", sln$Level) ,][,3],
+                     sln[grep("2.NSFTV", sln$Level) ,][,3],
+                     sln[grep("3.NSFTV", sln$Level) ,][,3]))
+  
+  colnames(g.hat.y) <- sub("1.", "", sln[grep("1.NSFTV", sln$Level) ,][,2])
+  
+  #Calculated gBLUPs at each time point. Note here we use 20:40 to solve for the gBLUPs at later time points. 
+  Phi <- stdtime(20:40, 2) %*% t(legendre(2, gengler = F))
+  ghat.t.y <- t(apply(g.hat.y, 2, function (x) Phi %*% x))
+  colnames(ghat.t.y) <- 20:40
+  gBLUP <- melt(ghat.t.y)
+  colnames(gBLUP) <- c("NSFTV.ID", "DayOfImaging", "gBLUP")
+  
+  if(i == 1 ){
+    final.blups <- gBLUP
+  }else{
+    final.blups <- cbind(final.blups, gBLUP[,3])
+  }
+}
+
+#This object contains all the gBLUP values for each accession, run and time point
+colnames(final.blups)[3:ncol(final.blups)] <- sub(".sln", "", sub("CV[:1-4:]", "", Files) )
+```
+
+```{r RR CV results}
+library(plyr)
+
+#Now we do the correlation and get the actual CV results
+Cor.res <- matrix(0, ncol=20, nrow=19)
+
+for(j in 1:length(Files)){
+  tmp <- final[c("NSFTV.ID", colnames(final.blups)[j+2])]
+  colnames(tmp)[2] <- "Y"
+  tmp <- ddply(tmp, .(NSFTV.ID), summarise, Cnt=sum(is.na(Y)))
+  
+  #Find which accessions are in the test set
+  test.acc <- tmp[ tmp$Cnt == 120 ,]$NSFTV.ID
+  
+  #Merge the gBLUPs and observed PSA datasets
+  tmp.df <- merge(Ind.PSA, final.blups, by=c("DayOfImaging", "NSFTV.ID"))
+  
+  #Only keep the data for individuals in the testing set
+  tmp.df <- tmp.df[tmp.df$NSFTV.ID %in% test.acc ,]
+  tmp.df <- cbind(tmp.df[1:5], tmp.df[, (j + 5)])
+  tmp.df <- tmp.df[order(tmp.df$DayOfImaging, tmp.df$NSFTV.ID) ,]
+  colnames(tmp.df)[6] <- "gBLUP"
+  
+  #Do the correlations. Note here the correlation is between gBLUPs and the PSA from 2017
+  res <- rbind(ldply(dlply(tmp.df[tmp.df$DayOfImaging %in% Ind.PSA$DayOfImaging ,], 
+                           .(DayOfImaging), function(x) cor(x$E1, x$gBLUP, use="complete.obs") ) )[,2],
+               ldply(dlply(tmp.df[tmp.df$DayOfImaging %in% Ind.PSA$DayOfImaging ,], 
+                           .(DayOfImaging), function(x) cor(x$E2, x$gBLUP, use="complete.obs") ) )[,2],
+               ldply(dlply(tmp.df[tmp.df$DayOfImaging %in% Ind.PSA$DayOfImaging ,], 
+                           .(DayOfImaging), function(x) cor(x$E3, x$gBLUP, use="complete.obs") ) )[,2] )
+  
+  #Store the results
+  Cor.res[,j] <- colMeans(res)
+}
+```
+
+##Plot the results
+Here is the code use to generate Figure 5D.
+```{r plot the results}
+Cor.res.mean <- apply(Cor.res, 1, mean)
+Cor.res.sd <- apply(Cor.res, 1, sd)
+
+names(Cor.res.mean) <- unique(Ind.PSA$DayOfImaging)
+names(Cor.res.sd) <- unique(Ind.PSA$DayOfImaging)
+
+#pdf("~/Desktop/RR/RR/Figures/ScenarioD.pdf", h=2.1, w=3.5, useDingbats = F, pointsize = 10)
+#par(mar=c(3,3,1,.2), mgp=c(1.8,0.5,0))
+
+plot(names(Cor.res.mean), Cor.res.mean, ylim = c(0,1), cex = 0.3, pch = 19, xlab = "Days After Transplant", ylab = expression(italic("r")))
+lines(names(Cor.res.mean), Cor.res.mean)
+
+segments(as.numeric(names(Cor.res.mean)), Cor.res.mean - Cor.res.sd, as.numeric(names(Cor.res.mean)), Cor.res.mean + Cor.res.sd, lwd=1)
+segments(as.numeric(names(Cor.res.mean)) - 0.1, Cor.res.mean - Cor.res.sd, as.numeric(names(Cor.res.mean)) + 0.1, Cor.res.mean - Cor.res.sd, lwd=1)
+segments(as.numeric(names(Cor.res.mean)) - 0.1, Cor.res.mean + Cor.res.sd, as.numeric(names(Cor.res.mean)) + 0.1, Cor.res.mean + Cor.res.sd, lwd=1)
+
+#dev.off()
+```
