@@ -8,7 +8,7 @@ author_profile: true
 
 <img align="right" width="244" height="200" src= /images/Hussain_2018.jpg>
 
-<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](/_publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
+<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](/publications/2018-8-1-ShinyAIM.md) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
 We developed a nice tool to easily visualize multiple manhattan plots. This is particaully useful for phenomics datasets or longitudinal studies.
 
