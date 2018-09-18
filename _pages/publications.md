@@ -34,7 +34,7 @@ This paper utilized a random regression approach for genomic prediction of longi
 
 <br>
 
-![Campbell2017_PG](http://malachycampbell.github.io/images/Campbell_2017_PlantGenome.jpeg){: .align-left height="200px" width="544px"}
+![Campbell2017_PG](http://malachycampbell.github.io/images/Campbell_2017_PlantGenome.png){: .align-left height="200px" width="186px"}
 
 <b>[A Comprehensive Image based Phenomic Analysis Reveals the Complex Genetic Architecture of Shoot Growth Dynamics in Rice (Oryza sativa).](http://malachycampbell.github.io/publications/2017-06-27-A-Comprehensive-Image-based-Phenomic-Analysis-Reveals-the-Complex-Genetic-Architecture-of-Shoot-Growth-Dynamics-in-Rice)</b> <b>Campbell, M.T. </b>, Q. Du, K. Liu, C.J. Brien, B. Berger, C. Zhang, and H. Walia. (2017). <i>Plant Genome</i>.
 
