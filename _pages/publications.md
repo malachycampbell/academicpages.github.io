@@ -16,7 +16,7 @@ We developed a nice tool to easily visualize multiple manhattan plots. This is p
 
 <br>
 
-<img align="left" width="246" height="200" src= /images/Du_2018.jpg>
+<img align="left" width="246" height="200" src= http://malachycampbell.github.io/images/Du_2018.jpg>
 
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/publications/2018-6-29-Using-LASSO-in-gene-co-expression) </b> Du, Q., <b>Campbell, M.T.</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
 
