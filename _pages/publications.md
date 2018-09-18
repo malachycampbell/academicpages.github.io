@@ -46,7 +46,7 @@ We used a "two-step" functional GWAS and genomic prediction approach to study sh
 
 <b>[Allelic variants of OsHKT1;1 underlie the divergence between indica and japonica subspecies of rice (Oryza sativa) for root sodium content.](http://malachycampbell.github.io/publications/2017-06-05-Allelic-variants-of-OsHKT11-underlie-the-divergence-between-indica-and-japonica-subspecies-of-rice-for-root-sodium-content)</b> <b>Campbell, M.T. </b>, N. Bandillo, F.R.A. Al Shiblawi, S. Sharma, K. Liu, Q. Du, A.J. Schmitz, C. Zhang, A.A. Very, A.J. Lorenz, and H. Walia. (2017). <i>PLoS Genetics</i>.
 
-<i>HKT1;1</i> was identified as a major regualtor of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.
+<i>HKT1;1</i> was identified as a major regulator of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.
 
 <br>
 
