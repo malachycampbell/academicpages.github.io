@@ -5,6 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
+<img align="left" width="178" height="100" src= /images/Hussain_2018.png>
 
 <b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](/_publications/2018-8-1-ShinyAIM.md) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
@@ -40,10 +41,10 @@ We developed a software to process and anayze images derived from high throughpu
 
 Here, we used image based high thoughput phenotyping and association mapping to examine the genetic basis of temporal salinity responses.
   
-<b>[Genetic and Molecular Characterization of Submergence Response Identifies Subtol6 as a Major Submergence Tolerance Locus in Maize](/_publications/2015-03-25-Genetic-and-Molecular-Characterization-of-Submergence-Response-Identifies-Subtol6-as-a-Major-Submergence-Tolerance-Locus-in-Maize.md)</b> <b>Campbell, M.T.</b>, Campbell, M.T., C.A. Proctor, Y. Dou, A.J. Schmitz, P. Phansak, G.R. Kruger, C. Zhang, and H. Walia. (2015). <i>PLoS One</i>. <br>
+<b>[Genetic and Molecular Characterization of Submergence Response Identifies Subtol6 as a Major Submergence Tolerance Locus in Maize](/_publications/2015-03-25-Genetic-and-Molecular-Characterization-of-Submergence-Response-Identifies-Subtol6-as-a-Major-Submergence-Tolerance-Locus-in-Maize.md).</b> <b>Campbell, M.T.</b>, Campbell, M.T., C.A. Proctor, Y. Dou, A.J. Schmitz, P. Phansak, G.R. Kruger, C. Zhang, and H. Walia. (2015). <i>PLoS One</i>. <br>
 
 This paper assesses natural variation for submegence tolerance in maize and identifies a QTL that influences submegence tolerance.
   
-<b>[Genetic and Molecular Characterization of Submergence Response Identifies Subtol6 as a Major Submergence Tolerance Locus in Maize](/_publications/2013-10-01-Introgression-of-novel-traits-from-a-wild-wheat-relative-improves-drought-adaptation-in-wheat.md)</b>  Placido, D.F., <b>M.T. Campbell</b>, J.J. Folsom, X. Cui, G.R. Kruger, P.S. Baenziger, and H. Walia. (2015). <i>PLoS One</i>. <br>
+<b>[Introgression of Novel Traits from a Wild Wheat Relative Improves Drought Adaptation in Wheat](/_publications/2013-10-01-Introgression-of-novel-traits-from-a-wild-wheat-relative-improves-drought-adaptation-in-wheat.md).</b>  Placido, D.F., <b>M.T. Campbell</b>, J.J. Folsom, X. Cui, G.R. Kruger, P.S. Baenziger, and H. Walia. (2013). <i>Plant Physiology</i>. <br>
 
 This paper looks at the effects of an introgression from <i>Agropyron elongatum</i> into <i>Triticum aestivum</i> on drought tolerance.
