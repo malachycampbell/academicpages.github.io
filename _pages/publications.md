@@ -28,9 +28,9 @@ We used a two-step" functional GWAS and genomic prediction approach to study sho
 
 <b>[Allelic variants of OsHKT1;1 underlie the divergence between indica and japonica subspecies of rice (Oryza sativa) for root sodium content.](/_publications/2017-06-05-Allelic-variants-of-OsHKT11-underlie-the-divergence-between-indica-and-japonica-subspecies-of-rice-for-root-sodium-content.md)</b> <b>Campbell, M.T. </b>, N. Bandillo, F.R.A. Al Shiblawi, S. Sharma, K. Liu, Q. Du, A.J. Schmitz, C. Zhang, A.A. Very, A.J. Lorenz, and H. Walia. (2017). <i>PLoS Genetics</i>.
 
-<i>HKT1;1<\i> was identified as a major regualtor of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.
+<i>HKT1;1</i> was identified as a major regualtor of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.
 
-<b>[Image Harvest: an open source platform for high throughput plant image processing and analysis.](/_publications/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis.md)</b> Knecht, A.C. <sup>&dagger</sup><sup>&Dagger</sup>, <b>M.T. Campbell<sup>&dagger</sup></b>, A. Caprez, D.R. Swanson, and H. Walia. (2016). <i>Journal of Experimental Botany</i>. <br>
+<b>[Image Harvest: an open source platform for high throughput plant image processing and analysis.](/_publications/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis.md)</b> Knecht, A.C. &#135, <b>M.T. Campbell, A. Caprez, D.R. Swanson, and H. Walia. (2016). <i>Journal of Experimental Botany</i>. <br>
 
 We developed a software to process and anayze images derived from high throughput phenotyping platforms. <br>
 <sup>&dagger</sup> Equal contribution
