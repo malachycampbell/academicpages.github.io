@@ -30,7 +30,7 @@ We used a two-step" functional GWAS and genomic prediction approach to study sho
 
 <i>HKT1;1</i> was identified as a major regualtor of root sodium content in rice. Variants that influence the transport of sodium were found to be a component of the divergence between to two subspecies of rice for root sodium content.
 
-<b>[Image Harvest: an open source platform for high throughput plant image processing and analysis.](/_publications/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis.md)</b> Knecht, A.C. &#8224;&#8225;, <b>M.T. Campbell&#8224; </b>, A. Caprez, D.R. Swanson, and H. Walia. (2016). <i>Journal of Experimental Botany</i>. <br>
+<b>[Image Harvest: an open source platform for high throughput plant image processing and analysis.](/_publications/2016-04-13-Image-Harvest-an-open-source-platform-for-high-throughput-plant-image-processing-and-analysis.md)</b> Knecht, A.C.&#8224;&#8225;, <b>M.T. Campbell&#8224; </b>, A. Caprez, D.R. Swanson, and H. Walia. (2016). <i>Journal of Experimental Botany</i>. <br>
 
 We developed a software to process and anayze images derived from high throughput phenotyping platforms. <br>
 &#8224; Equal contribution <br>
