@@ -6,7 +6,7 @@ author_profile: true
 
 ## Pre-prints
 
-<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](https://github.com/malachycampbell/malachycampbell.github.io/_publications/2018-8-1-ShinyAIM.md)</b> <br> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>. 
+<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/_publications/2018-8-1-ShinyAIM.md)</b> <br> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>. 
   <i>Under review at Plant Direct</i>
   
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/_publications/2018-6-29-Using-LASSO-in-gene-co-expression.md)</b> Du, Q., <b>Campbell, M.T.</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
