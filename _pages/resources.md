@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Data and Research Resources"
 permalink: /resources/
 author_profile: true
