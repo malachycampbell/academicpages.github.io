@@ -58,6 +58,8 @@ We developed a software to process and anayze images derived from high throughpu
 &#8224; Equal contribution <br>
 &#8225; Undergraduate coauthor
 
+<br>
+
 ![Campbell2015_PlPhys](http://malachycampbell.github.io/images/Campbell_2015_PlantPhys.jpg){: .align-right height="200px" width="331px"}
 
 <b>[Integrating image based phenomics and association analysis to dissect the genetic architecture of temporal salinity responses in rice.](http://malachycampbell.github.io/publications/2015-08-01-Integrating-image-based-phenomics-and-association-analysis-to-dissect-the-genetic-architecture-of-temporal-salinity-responses-in-rice)</b> <b>Campbell, M.T.</b>, A.C. Knecht, B. Berger, C.J. Brien, D. Wang, and H. Walia. (2015). <i>Plant Physiology</i>. <br>
