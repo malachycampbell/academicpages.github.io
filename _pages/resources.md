@@ -1,6 +1,6 @@
 ---
 title: "Data and Research Resources"
-permalink: /resources/
+permalink: /resources/RR_GP/README
 author_profile: true
 ---
 
