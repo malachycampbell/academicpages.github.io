@@ -14,6 +14,7 @@ We developed a nice tool to easily visualize multiple manhattan plots. This is p
   <i>Currently under review at Plant Direct</i>
 
 <br>
+
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](/_publications/2018-6-29-Using-LASSO-in-gene-co-expression.md) </b> Du, Q., <b>Campbell, M.T.</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
 
 Here, we used LASSO to select gene coexpression modules associated with salinity tolerance traits.
