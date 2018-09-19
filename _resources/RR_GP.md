@@ -43,5 +43,5 @@ This repo contains all the code and data used for the manuscript: "Utilizing ran
 [![DOI](https://zenodo.org/badge/138613689.svg)](https://zenodo.org/badge/latestdoi/138613689)
 ---
 
-<img align = "left" alt="WRCHR" src = http://malachycampbell.github.io/images/WRCHR.png width = "200" height = "65.43491">
-<img align = "left" alt="NSF" src = http://malachycampbell.github.io/images/nsf_logo.png width = "65.43491" height = "65.43491"/>
+![WRCHR](http://malachycampbell.github.io/images/WRCHR.png){: .align-left width = "200" height = "65"}
+![NSF](http://malachycampbell.github.io/images/nsf_logo.png){: .align-left width = "65" height = "65"}
