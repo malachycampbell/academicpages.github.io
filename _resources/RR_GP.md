@@ -1,6 +1,6 @@
 ---
 title: "Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping"
-collection: publications
+collection: resources
 permalink: /resources/RR_GP
 author_profile: true
 ---
