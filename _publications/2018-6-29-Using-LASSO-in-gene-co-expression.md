@@ -12,5 +12,3 @@ citation: 'Du, Q., M.T. Campbell, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (
 <a href='http://malachycampbell.github.io/files/Du_LASSO_2018.pdf'>Download paper here</a>
 
 Here, we used LASSO to select gene coexpression modules associated with salinity tolerance traits.
-
-Recommended citation: Du, Q., M.T. Campbell, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018) Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice. bioRxiv.
