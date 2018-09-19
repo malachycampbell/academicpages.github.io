@@ -1,6 +1,7 @@
 ---
 title: "Data and Research Resources"
 permalink: /resources/
+layout: collections
 author_profile: true
 ---
 
