@@ -17,12 +17,12 @@ The phenotypic and genotypic data used is the same that was used in our Plant Di
 
 ## Table of Contents 
 * **1. Preparation of Genotypic Data**
-  - [html output](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/HTMLoutput/1.GenotypicData.html)
-  - [.Rmd File](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/HTMLoutput/1.GenotypicData.Rmd)
+  - [html output](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/1.GenotypicData.html)
+  - [.Rmd File](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/1.GenotypicData.Rmd)
   
 * **2. Predicting GEBVs with random regression models**
-  - [html output](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/HTMLoutput/2.GEBVs_RR.html)
-  - [.Rmd File](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/HTMLoutput/2.GEBVs_RR.Rmd)
+  - [html output](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/2.GEBVs_RR.html)
+  - [.Rmd File](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/2.GEBVs_RR.Rmd)
   
 * **3. Predicting GEBVs with single time point gBLUP models**
   - [html output](https://rawgit.com/malachycampbell/Leveraging-RR-GEBVs-for-genomic-inference-of-longitudinal-traits/master/3.GEBVs_TP.html)
