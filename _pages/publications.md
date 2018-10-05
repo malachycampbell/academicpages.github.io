@@ -6,6 +6,10 @@ author_profile: true
 
 ## Pre-prints
 
+![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="244px"}
+
+<b>[Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits.](http://malachycampbell.github.io/publications/2018-10-5-RRGWAS) </b> <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
+
 ![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
 
 <b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
