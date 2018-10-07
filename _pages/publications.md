@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
-![Yu2018](http://malachycampbell.github.io/images/HpYu.jpg){: .align-right height="200px" width="123px"}
+![Yu2018](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="200px" width="123px"}
 
 <b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
