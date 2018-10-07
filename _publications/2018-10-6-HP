@@ -1,0 +1,14 @@
+---
+title: "Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes"
+collection: publications
+permalink: /publications/2018-10-6-HP
+excerpt: 'This is a really nice approach to reduce the dimensionality of phenomics datasets and understand the genetic interrelationships between  trait classes. Haipeng used confirmatory factor analysis to reduce 48 observed phenotypes into six latent variables, which essentailly respresent unobserved biological processes that contribute to the traits, and used Bayesian network to understand the interdependence among latent variables. Check out the preprint!'
+date: 2018-10-06
+venue: 'BioRxiv'
+paperurl: 'http://malachycampbell.github.io/files/Yu2018.pdf'
+citation: 'Yu, H., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018) Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes. bioRxiv.'
+---
+
+<a href='http://malachycampbell.github.io/files/Yu2018.pdf'>Download paper here</a>
+
+This is a really nice approach to reduce the dimensionality of phenomics datasets and understand the genetic interrelationships between  trait classes. Haipeng used confirmatory factor analysis to reduce 48 observed phenotypes into six latent variables, which essentailly respresent unobserved biological processes that contribute to the traits, and used Bayesian network to understand the interdependence among latent variables. Check out the preprint!
