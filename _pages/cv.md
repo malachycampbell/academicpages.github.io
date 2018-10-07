@@ -126,7 +126,7 @@ Teaching Experience
 
 Professional Development
 ======
-* Teaching Philosophies/Portfolios. University of Nebraska - Lincoln. September 4, 2018. Lincoln, NE. \textsl{Online workshop}.
-* Faculty Advising: What You Need to Know and How to Do It Well. Center for the Integration of Research, Teaching and Learning. August 8, 2018. University of Wisconsin - Madison. \textsl{Online workshop}.
-* Advanced Quantitative Genetics. 23rd Summer Institute in Statistical Genetics. July 23-25, 2018. University of Washington, Department of Biostatistics. Seattle, WA. \textsl{Short course}.
-* Bayesian Statistics for Genetics. 23rd Summer Institute in Statistical Genetics. July 25-27, 2018. University of Washington, Department of Biostatistics. Seattle, WA. \textsl{Short course}.
+* Teaching Philosophies/Portfolios. University of Nebraska - Lincoln. September 4, 2018. Lincoln, NE. <i>Online workshop</i>.
+* Faculty Advising: What You Need to Know and How to Do It Well. Center for the Integration of Research, Teaching and Learning. August 8, 2018. University of Wisconsin - Madison. <i>Online workshop</i>.
+* Advanced Quantitative Genetics. 23rd Summer Institute in Statistical Genetics. July 23-25, 2018. University of Washington, Department of Biostatistics. Seattle, WA. <i>Short course</i>.
+* Bayesian Statistics for Genetics. 23rd Summer Institute in Statistical Genetics. July 25-27, 2018. University of Washington, Department of Biostatistics. Seattle, WA. <i>Short course</i>.
