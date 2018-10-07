@@ -99,6 +99,20 @@ Skills
 
 Teaching Experience
 ======
+* January 2018 - March 2018: Guest Lecturer
+  * Agronomy and Horticulture Department
+  * University of Nebraska - Lincoln, Lincoln, NE
+  * Course: Introductory Plant Physiology (AGRO 325)
+  
+* January 2018 - February 2018: Guest Lecturer
+  * Statistics Department
+  * University of Nebraska - Lincoln, Lincoln, NE
+  * Course: Integrative Data Science for Plant Phenomics (STAT 892)
+  
+* July 2016, 2017: Co-instructor
+  * Arkansas Biosciences Institute
+  * Arkansas State University, Jonesboro, AR
+  * Course: High-throughput rice phenotyping - Summer workshop
 
 * September 2010 - December 2010: Teaching Assistant 
   * Plant Science Department
@@ -109,3 +123,10 @@ Teaching Experience
   * Plant Science Department
   * Rutgers University, New Brunswick, NJ
   * Courses: Introduction to Horticulture (11:776:211), General Plant Pathology (11:770:301), Plant Science (11:776:242), Plant Genetics (11:776:305))
+
+Professional Development
+======
+* Teaching Philosophies/Portfolios. University of Nebraska - Lincoln. September 4, 2018. Lincoln, NE. \textsl{Online workshop}.
+* Faculty Advising: What You Need to Know and How to Do It Well. Center for the Integration of Research, Teaching and Learning. August 8, 2018. University of Wisconsin - Madison. \textsl{Online workshop}.
+* Advanced Quantitative Genetics. 23rd Summer Institute in Statistical Genetics. July 23-25, 2018. University of Washington, Department of Biostatistics. Seattle, WA. \textsl{Short course}.
+* Bayesian Statistics for Genetics. 23rd Summer Institute in Statistical Genetics. July 25-27, 2018. University of Washington, Department of Biostatistics. Seattle, WA. \textsl{Short course}.
