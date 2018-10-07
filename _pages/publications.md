@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
-![Yu2018](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="200px" width="123px"}
+![Yu2018](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="300px" width="184px"}
 
 <b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
@@ -83,7 +83,7 @@ Here, we used image based high thoughput phenotyping and association mapping to 
 
 <br>
 
-![Campbell2015_PlosOne](http://malachycampbell.github.io/images/Campbell_2015_PLoSOne.png){: .align-left height="200px" width="186px"}
+![Campbell2015_PlosOne](http://malachycampbell.github.io/images/Campbell_2015_PLoSOne.png){: .align-left height="225px" width="233px"}
 
 <b>[Genetic and Molecular Characterization of Submergence Response Identifies Subtol6 as a Major Submergence Tolerance Locus in Maize](http://malachycampbell.github.io/publications/2015-03-25-Genetic-and-Molecular-Characterization-of-Submergence-Response-Identifies-Subtol6-as-a-Major-Submergence-Tolerance-Locus-in-Maize).</b> <b>Campbell, M.T.</b>, Campbell, M.T., C.A. Proctor, Y. Dou, A.J. Schmitz, P. Phansak, G.R. Kruger, C. Zhang, and H. Walia. (2015). <i>PLoS One</i>. <br>
 
