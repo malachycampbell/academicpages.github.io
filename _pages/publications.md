@@ -41,6 +41,8 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 
 This is a nice tool to easily visualize multiple manhattan plots. Wasseem packaged a bunch of useful methods to explore the phenotypic data and GWAS results into this app. This is particularly useful for phenomics datasets or longitudinal studies.
 
+<br>
+
 ![Campbell2018](http://malachycampbell.github.io/images/Campbell_2018_PlantDirect.jpg){: .align-right height="200px" width="191px"}
 
 <b>[Utilizing random regression models for genomic prediction of a longitudinal trait derived from high-throughput phenotyping.](http://malachycampbell.github.io/publications/2018-05-11-Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-high-throughput-phenotyping)</b> <b>Campbell, M.T.</b>, H. Walia, and G. Morota. (2018). <i>Plant Direct</i>.
