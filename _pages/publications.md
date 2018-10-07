@@ -5,18 +5,23 @@ author_profile: true
 ---
 
 ## Pre-prints
+![Yu2018](http://malachycampbell.github.io/images/HpYu.jpg){: .align-right height="200px" width="123px"}
 
-![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="244px"}
+<b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
+
+This is a really nice approach to reduce the dimensionality of phenomics datasets and understand the genetic interrelationships between  trait classes. Haipeng used confirmatory factor analysis to reduce 48 observed phenotypes into six latent variables, which essentailly respresent unobserved biological processes that contribute to the traits, and used Bayesian network to understand the interdependence among latent variables. Check out the preprint! 
+  
+   <i>Currently under review at G3</i>
+
+<br>
+
+![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="436px"}
 
 <b>[Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits.](http://malachycampbell.github.io/publications/2018-10-5-RRGWAS) </b> <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
 
-![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
+This study builds on the random regression genomic prediction approach described in [Campbell et al 2018](http://malachycampbell.github.io/publications/2018-05-11-Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-high-throughput-phenotyping), and used the derived breeding values for genomic inferenece across time points.
 
-<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
-
-We developed a nice tool to easily visualize multiple manhattan plots. This is particularly useful for phenomics datasets or longitudinal studies.
-
-  <i>Currently under review at Plant Direct</i>
+  <i>Currently under review at The Plant Genome</i>
 
 <br>
 
@@ -29,6 +34,12 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 <br>
 
 ## Peer-reviewed Publications
+
+![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
+
+<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>Plant Direct (In Press)</i>.
+
+This is a nice tool to easily visualize multiple manhattan plots. Wasseem packaged a bunch of useful methods to explore the phenotypic data and GWAS results into this app. This is particularly useful for phenomics datasets or longitudinal studies.
 
 ![Campbell2018](http://malachycampbell.github.io/images/Campbell_2018_PlantDirect.jpg){: .align-right height="200px" width="191px"}
 
@@ -80,7 +91,7 @@ This paper assessed natural variation for submegence tolerance in maize and iden
  
 <br>
 
-![Placido2013](http://malachycampbell.github.io/images/Placido_2013.jpg){: .align-right height="200px" width="251px"}
+![Placido2013](http://malachycampbell.github.io/images/Placido_2013.jpg){: .align-right height="200px" width="341px"}
 
 <b>[Introgression of Novel Traits from a Wild Wheat Relative Improves Drought Adaptation in Wheat](http://malachycampbell.github.io/publications/2013-10-01-Introgression-of-novel-traits-from-a-wild-wheat-relative-improves-drought-adaptation-in-wheat).</b>  Placido, D.F., <b>M.T. Campbell</b>, J.J. Folsom, X. Cui, G.R. Kruger, P.S. Baenziger, and H. Walia. (2013). <i>Plant Physiology</i>. <br>
 
