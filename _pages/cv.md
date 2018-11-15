@@ -99,6 +99,11 @@ Skills
 
 Teaching Experience
 ======
+* November 11-15 2018: Co-instructor
+  * Department of Agriculture and Life Sciences
+  * University of Tokyo - Tokyo, JP
+  * Workshop: [Statistical Methods for Omics-assisted Breeding](https://sites.google.com/ut-biomet.org/statistical-methods-ws/%E3%83%9B%E3%83%BC%E3%83%A0)
+  
 * January 2018 - March 2018: Guest Lecturer
   * Agronomy and Horticulture Department
   * University of Nebraska - Lincoln, Lincoln, NE
@@ -112,7 +117,7 @@ Teaching Experience
 * July 2016, 2017: Co-instructor
   * Arkansas Biosciences Institute
   * Arkansas State University, Jonesboro, AR
-  * Course: High-throughput rice phenotyping - Summer workshop
+  * Workshop: High-throughput rice phenotyping
 
 * September 2010 - December 2010: Teaching Assistant 
   * Plant Science Department
