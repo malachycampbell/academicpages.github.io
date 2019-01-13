@@ -1,13 +1,11 @@
 ---
 layout: archive
-title: "CV"
+title: "CV [(CV)](http://malachycampbell.github.io/files/Placido_2013.pdf)"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
-
-<a href='http://malachycampbell.github.io/files/Placido_2013.pdf'>Check out my current CV here</a>
 
 {% include base_path %}
 
