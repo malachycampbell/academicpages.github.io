@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV [(CV)](http://malachycampbell.github.io/files/Placido_2013.pdf)"
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
