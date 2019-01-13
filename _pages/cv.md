@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+<a href='http://malachycampbell.github.io/files/Placido_2013.pdf'>Check out my current CV here</a>
+
 {% include base_path %}
 
 Education
