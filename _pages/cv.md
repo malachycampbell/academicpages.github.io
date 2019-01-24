@@ -21,10 +21,15 @@ Education
 
 Research Experience
 ======
-* September 2017 - Current: Postdoctoral Researcher
+* January 2019 - Current: Postdoctoral Researcher
+  * Department of Animal and Poultry Sciences, Virginia Tech
+  * Supervisor: Gota Morota
+  * Currently, I am continuing to develop novel approaches for genomic prediction and GWAS of longitudinal traits, as well as integrating process-driven ecophysiological models with whole genome regression approaches.
+  
+* September 2017 - January 2019: Postdoctoral Researcher
   * Department of Animal Science, University of Nebraska - Lincoln
   * Supervisor: Gota Morota
-  * Currently, I am developing methods for genomic prediction and GWAS of longitudinal traits derived from high-throughput phenotyping platforms.
+  * My research focused on developing methods for genomic prediction and GWAS of longitudinal traits derived from high-throughput phenotyping platforms.
   
 * March 2013 - August 2017: Graduate Research Assistant (Ph.D.)
   * Department of Agronomy and Horticulture, University of Nebraska - Lincoln
