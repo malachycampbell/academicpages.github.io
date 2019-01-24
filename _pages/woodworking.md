@@ -1,4 +1,3 @@
-
 ---
 title: "Woodworking"
 permalink: /woodworking/
