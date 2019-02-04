@@ -1,6 +1,6 @@
 ---
 title: "First Guitar"
-collection: woodworking
+collection: Guitar
 permalink: /woodworking/FirstGuitar/
 author_profile: true
 ---
