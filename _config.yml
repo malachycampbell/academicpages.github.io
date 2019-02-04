@@ -184,7 +184,9 @@ collections:
   resources:
     output: true
     permalink: /:collection/:path/
-
+  woodworking:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
