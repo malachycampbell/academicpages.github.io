@@ -1,5 +1,5 @@
 ---
-title: "Guitars"
+title: "First Guitar"
 collection: woodworking
 permalink: /woodworking/Guitars/
 author_profile: true
