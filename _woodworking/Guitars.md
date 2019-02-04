@@ -9,21 +9,21 @@ author_profile: true
   <a target="_blank" href="http://malachycampbell.github.io/images/G10.jpeg">
     <img src="http://malachycampbell.github.io/images/G10.jpeg" alt="" width="300">
   </a>
-  <div class="desc">Just about finished. Just waiting for a proper set up.</div>
+  <div class="desc">Just about finished. Just waiting for a proper set up</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="http://malachycampbell.github.io/images/G1.jpeg">
+  <a target="_blank" href="http://malachycampbell.github.io/images/G1.JPG">
     <img src="http://malachycampbell.github.io/images/G1.jpeg" alt="" width="300">
   </a>
-  <div class="desc">Body shaped and routed./div>
+  <div class="desc">Body shaped and routed/div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="http://malachycampbell.github.io/images/G2.jpeg">
+  <a target="_blank" href="http://malachycampbell.github.io/images/G2.jpg">
     <img src="http://malachycampbell.github.io/images/G2.jpeg" alt="" width="300">
   </a>
-  <div class="desc">Roughed out the neck and made sure it fit.</div>
+  <div class="desc">Roughed out the neck and made sure it fit</div>
 </div>
 
 <div class="gallery">
