@@ -1,6 +1,6 @@
 ---
 title: "Guitars"
-collection: woodworking
+collection: Guitars
 permalink: /woodworking/Guitars/
 author_profile: true
 ---
