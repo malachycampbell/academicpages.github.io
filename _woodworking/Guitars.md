@@ -14,14 +14,14 @@ author_profile: true
 
 <div class="gallery">
   <a target="_blank" href="http://malachycampbell.github.io/images/G1.JPG">
-    <img src="http://malachycampbell.github.io/images/G1.jpeg" alt="" width="300">
+    <img src="http://malachycampbell.github.io/images/G1.JPG" alt="" width="300">
   </a>
-  <div class="desc">Body shaped and routed/div>
+  <div class="desc">Body shaped and routed</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="http://malachycampbell.github.io/images/G2.jpg">
-    <img src="http://malachycampbell.github.io/images/G2.jpeg" alt="" width="300">
+    <img src="http://malachycampbell.github.io/images/G2.jpg" alt="" width="300">
   </a>
   <div class="desc">Roughed out the neck and made sure it fit</div>
 </div>
