@@ -1,7 +1,7 @@
 ---
 title: "First Guitar"
 collection: Guitar
-permalink: /woodworking/FirstGuitar/
+permalink: /woodworking/FirstGuitar
 author_profile: true
 ---
 
