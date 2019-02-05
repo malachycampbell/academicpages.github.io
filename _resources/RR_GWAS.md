@@ -5,11 +5,6 @@ permalink: /resources/RR_GWAS
 author_profile: true
 ---
 
-
-<h1 align="center">
-  <img alt=" Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits" width = "1711.846" height = "200" src = Title.svg>
-</h1>
-
 [Malachy Campbell](https://malachycampbell.github.io/), Medhi Momen, [Harkamal Walia](http://cropstressgenomics.org/), [Gota Morota](http://morotalab.org/)
 
 ## Abstract
