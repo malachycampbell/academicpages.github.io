@@ -1,7 +1,7 @@
 ---
 title: "Cutting Boards"
 collection: woodworking
-permalink: /woodworking/CuttingBoards/
+permalink: /woodworking/CuttingBoards
 author_profile: true
 ---
 
