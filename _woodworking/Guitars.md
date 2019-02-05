@@ -1,7 +1,7 @@
 ---
 title: "Guitars"
 collection: woodworking
-permalink: /woodworking/
+permalink: /woodworking/Guitars
 author_profile: true
 ---
 
