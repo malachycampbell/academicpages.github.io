@@ -1,3 +1,11 @@
+---
+title: "Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits"
+collection: resources
+permalink: /resources/RR_GWAS
+author_profile: true
+---
+
+
 <h1 align="center">
   <img alt=" Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits" width = "1711.846" height = "200" src = Title.svg>
 </h1>
