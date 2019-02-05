@@ -46,5 +46,5 @@ The phenotypic and genotypic data used is the same that was used in our Plant Di
 
 ---
 
-<img align = "left" alt="WRCHR" src = WRCHR.png width = "200" height = "65.43491">
-<img align = "left" alt="NSF" src = nsf_logo.png width = "65.43491" height = "65.43491"/>
+<img align = "left" alt="WRCHR" src = http://malachycampbell.github.io/images/WRCHR.png width = "200" height = "65.43491">
+<img align = "left" alt="NSF" src = http://malachycampbell.github.io/images/nsf_logo.png width = "65.43491" height = "65.43491"/>
