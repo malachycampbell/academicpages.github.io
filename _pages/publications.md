@@ -41,7 +41,7 @@ This study builds on the random regression genomic prediction approach described
 
 ![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
 
-<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>Plant Direct (In Press)</i>.
+<b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>Plant Direct</i>.
 
 This is a nice tool to easily visualize multiple manhattan plots. Wasseem packaged a bunch of useful methods to explore the phenotypic data and GWAS results into this app. This is particularly useful for phenomics datasets or longitudinal studies.
 
