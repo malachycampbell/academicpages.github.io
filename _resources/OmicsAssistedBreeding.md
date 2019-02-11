@@ -7,7 +7,7 @@ author_profile: true
 
 Slides for short course on ['omics assisted breeding methods.](https://sites.google.com/ut-biomet.org/statistical-methods-ws/)
 
-![OAB](http://malachycampbell.github.io/images/OAB.jpeg){: .align-left height="533px" width="800px"}
+![OAB](http://malachycampbell.github.io/images/OAB.jpeg){: .align-left height="400px" width="600px"}
 
 
 **Dates and Location**
