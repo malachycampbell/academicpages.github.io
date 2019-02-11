@@ -15,16 +15,6 @@ This is a really nice approach to reduce the dimensionality of phenomics dataset
 
 <br>
 
-![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="436px"}
-
-<b>[Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits.](http://malachycampbell.github.io/publications/2018-10-5-RRGWAS) </b> <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
-
-This study builds on the random regression genomic prediction approach described in [Campbell et al 2018](http://malachycampbell.github.io/publications/2018-05-11-Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-high-throughput-phenotyping), and used the derived breeding values for genomic inferenece across time points.
-
-  <i>Currently under review at The Plant Genome</i>
-
-<br>
-
 ![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-left height="200px" width="246px"}
 
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/publications/2018-6-29-Using-LASSO-in-gene-co-expression) </b> Du, Q., <b>Campbell, M.T.</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
@@ -34,6 +24,14 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 <br>
 
 ## Peer-reviewed Publications
+
+![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="436px"}
+
+<b>[Leveraging breeding values obtained from random regression models for genetic inference of longitudinal traits.](http://malachycampbell.github.io/publications/2019-2-9-RRGWAS) </b> <b>M.T. Campbell</b>, M. Momen, H. Walia, G. Morota. (2019). <i>The Plant Genome.</i>.
+
+This study builds on the random regression genomic prediction approach described in [Campbell et al 2018](http://malachycampbell.github.io/publications/2018-05-11-Utilizing-random-regression-models-for-genomic-prediction-of-a-longitudinal-trait-derived-from-high-throughput-phenotyping), and used the derived breeding values for genomic inferenece across time points.
+
+<br>
 
 ![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
 
