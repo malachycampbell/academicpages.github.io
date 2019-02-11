@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
-![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="300px" width="285px"}
+![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="375px" width="356px"}
 
 <b>[The genetic basis of cis-regulatory divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2019-01-04-The-genetic-basis-of-cis-regulatory-divergence-between-the-subspecies-of-cultivated-rice) </b> <b>Campbell, M.T.</b>, Q. Du, K. Liu, S. Sharma, C. Zhang, & H. Walia (2019). <i>bioRxiv</i>.
 
