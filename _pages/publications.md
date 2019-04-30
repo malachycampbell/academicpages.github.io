@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 ## Pre-prints
-<b>[Harnessing phenotypic networks and structural equation models to improve genome-wide association analysis] Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
+<b>[Harnessing phenotypic networks and structural equation models to improve genome-wide association analysis](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
 
 ![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="375px" width="356px"}
 
