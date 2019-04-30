@@ -23,7 +23,7 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 
 ## Peer-reviewed Publications
 
-![Yu2019](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="300px" width="184px"}
+![Yu2019](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-left height="300px" width="184px"}
 
 <b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, Q. Zhang, H. Walia, G. Morota. (2019). <i>G3: Genes, Genomes, Genetics</i>.
 
@@ -37,7 +37,7 @@ This study builds on the random regression genomic prediction approach described
 
 <br>
 
-![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-right height="200px" width="244px"}
+![Hussain2018](http://malachycampbell.github.io/images/Hussain_2018.jpg){: .align-left height="200px" width="244px"}
 
 <b>[ShinyAIM: Shiny-based Application of Interactive Manhattan Plots for Longitudinal Genome-Wide Association Studies.](http://malachycampbell.github.io/publications/2018-8-1-ShinyAIM) </b> Hussain, W., <b>M.T. Campbell</b>, H. Walia, G. Morota. (2018). <i>Plant Direct</i>.
 
