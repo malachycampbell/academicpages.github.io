@@ -5,21 +5,13 @@ author_profile: true
 ---
 
 ## Pre-prints
+<b>[Harnessing phenotypic networks and structural equation models to improve genome-wide association analysis] Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
+
 ![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="375px" width="356px"}
 
 <b>[The genetic basis of cis-regulatory divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2019-01-04-The-genetic-basis-of-cis-regulatory-divergence-between-the-subspecies-of-cultivated-rice) </b> <b>Campbell, M.T.</b>, Q. Du, K. Liu, S. Sharma, C. Zhang, & H. Walia (2019). <i>bioRxiv</i>.
 
 The differences between the subspecies of rice has been extensively studied at the morphological and genetic levels, however few studies have examined how these subspecies diverge at the transcriptional level. Here, we provide a comprehensive comparison of transcriptome diversity within cultivated rice and document the cis regulatory divergence between <i>Indica</i> and <i>Japonica</i>. To date, this is the largest collection of rice transcriptomes.
-
-![Yu2018](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="300px" width="184px"}
-
-<b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, Q. Zhang, H. Walia, G. Morota. (2018). <i>bioRxiv</i>.
-
-This is a really nice approach to reduce the dimensionality of phenomics datasets and understand the genetic interrelationships between  trait classes. Haipeng used confirmatory factor analysis to reduce 48 observed phenotypes into six latent variables, which essentailly respresent unobserved biological processes that contribute to the traits, and used Bayesian network to understand the interdependence among latent variables. Check out the preprint! 
-  
-   <i>Currently under review at G3</i>
-
-<br>
 
 ![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-left height="200px" width="246px"}
 
@@ -30,6 +22,12 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 <br>
 
 ## Peer-reviewed Publications
+
+![Yu2019](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-right height="300px" width="184px"}
+
+<b>[Genomic Bayesian confirmatory factor analysis and Bayesian network to characterize a wide spectrum of rice phenotypes.](http://malachycampbell.github.io/publications/2018-10-6-HP) </b> Yu, H., <b>M.T. Campbell</b>, Q. Zhang, H. Walia, G. Morota. (2019). <i>G3: Genes, Genomes, Genetics</i>.
+
+This is a really nice approach to reduce the dimensionality of phenomics datasets and understand the genetic interrelationships between  trait classes. Haipeng used confirmatory factor analysis to reduce 48 observed phenotypes into six latent variables, which essentailly respresent unobserved biological processes that contribute to the traits, and used Bayesian network to understand the interdependence among latent variables.
 
 ![Campbell2018RR](http://malachycampbell.github.io/images/Man.gif){: .align-right height="200px" width="436px"}
 
