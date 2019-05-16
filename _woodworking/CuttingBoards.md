@@ -25,3 +25,24 @@ author_profile: true
   </a>
   <div class="desc">The last five cutting boards. No more after this. Maple, cherry and walnut.</div>
 </div>
+
+<div class="gallery">
+  <a target="_blank" href="http://malachycampbell.github.io/images/MBdish.jpg">
+    <img src="http://malachycampbell.github.io/images/MBdish.jpg" alt="" width="300">
+  </a>
+  <div class="desc">Small dish made of maple burl.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://malachycampbell.github.io/images/MBbowl.jpg">
+    <img src="http://malachycampbell.github.io/images/MBbowl.jpg" alt="" width="300">
+  </a>
+  <div class="desc">Small bowl made of maple burl.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://malachycampbell.github.io/images/LiddedBox.jpg">
+    <img src="http://malachycampbell.github.io/images/LiddedBox.jpg" alt="" width="300">
+  </a>
+  <div class="desc">Lidded box made from cherry.</div>
+</div>
