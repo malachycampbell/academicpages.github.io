@@ -1,0 +1,14 @@
+---
+title: "Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines"
+collection: publications
+permalink: /publications/2019-05-08-Momen_2019b
+excerpt: 'We sought to apply random regression models to forecast shoot growth trajectories using B-splines and Legendre polynomials in well-watered and water-limited conditions under various longitudinal cross-validation scenarios. We showed that the frequency of phenotypic evaluation can be reduced without impacing prediction accuracy.'
+date: 2019-05-08
+venue: 'bioXriv'
+paperurl: 'http://malachycampbell.github.io/files/Momen_2019b.pdf'
+citation: 'Momen M., Campbell M.T., Walia H., Morota G. (2019) Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines. bioXriv.'
+---
+
+<a href='http://malachycampbell.github.io/files/Momen_2019b.pdf'>Download the paper here</a>
+
+We sought to apply random regression models to forecast shoot growth trajectories using B-splines and Legendre polynomials in well-watered and water-limited conditions under various longitudinal cross-validation scenarios. We showed that the frequency of phenotypic evaluation can be reduced without impacing prediction accuracy.
