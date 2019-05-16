@@ -12,6 +12,6 @@ Some pictures of guitars I made.
 
 ## [Misc woodworking](http://malachycampbell.github.io/woodworking/CuttingBoards)
 
-Cutting boards and miscellaneous other projects.
+Cutting boards, turned items and miscellaneous other projects.
 
 **More to come**
