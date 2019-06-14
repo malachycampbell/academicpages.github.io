@@ -5,6 +5,10 @@ author_profile: true
 ---
 
 ## Pre-prints
+<b>[Variance heterogeneity genome-wide mapping for cadmium in bread wheat reveals novel genomic loci and epistatic interactions.](http://malachycampbell.github.io/publications/2019-06-12-vQTL-wheat) </b> Hussain, W., <b>M.T. Campbell</b>, Jarquin D, Walia H, Morota G (2019). <i>bioRxiv</i>.
+
+We applied variance-heterogeneity GWAS to identify several loci associated with grain cadmium concentration in bread wheat. Moreover, we showed that several of the vQTL loci were involved in pairwise interactions with other vQTL loci, indicating that epistasis may underlie differences in variance heterogeniety.
+
 <b>[Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines.](http://malachycampbell.github.io/publications/2019-05-08-Momen_2019b) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
 
 We sought to apply random regression models to forecast shoot growth trajectories using B-splines and Legendre polynomials in well-watered and water-limited conditions under various longitudinal cross-validation scenarios. We showed that the frequency of phenotypic evaluation can be reduced without impacting prediction accuracy.
