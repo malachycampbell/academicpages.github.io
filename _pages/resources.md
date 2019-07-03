@@ -12,8 +12,4 @@ The objective of this study was to demonstrate the utility of random regression 
 
 This study builds off the approach used for our 2018 Plant Direct paper where we used RR for genomic prediction of shoot growth trajectories. Breifly, this approach estimates marker effects from breeding values obtained using a random regression model, and estimates the marker variance and corresponding p-values. The pipeline uses both ASREML and R. To predict the breeding values, users should have ASREML installed. Alternativly, you can just use the ".sln" files that are provided. All the code is presented in Rmarkdown, and the '.as' files used for ASREML are included as snippets in the .Rmd files. The contents are layed out according to the order presented in the methods section of the paper. All input and output is provided in DataandCode.zip. Refer to the README for a brief description of the contents.
 
-## [Materials for a short course on 'omics assisted breeding](http://malachycampbell.github.io/resources/OAB)
-
-These are teaching materials for a short workshop taught at the University of Tokyo with Hiroyoshi Iwata, Gota Morota, Diego Jarquin, Emi Tanaka and Jessica Tressou. Only the materials for the section I taught are included.
-
 **More to come**
