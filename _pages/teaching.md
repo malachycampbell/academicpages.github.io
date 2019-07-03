@@ -10,8 +10,8 @@ This was a three day workshop that was taught with Gota Morota and Haipeng Yu at
 
 [Link to the official course website](https://htmlpreview.github.io/?https://github.com/malachycampbell/VTGWAS2019/blob/gh-pages/VTGWAS2019.html)
 
-## [Statistical Methods for Omics Assisted Breeding](http://malachycampbell.github.io/teaching/2018-Omics-Assisted-Breeding.md)</b>
+## [Statistical Methods for Omics Assisted Breeding](http://malachycampbell.github.io/teaching/2018-Omics-Assisted-Breeding.md)
 
 This was a three day workshop that provided an introduction to quantitative genetics and taught participants how to leverage omics datasets for GWAS and genomic prediction. It was taught by Hiroyoshi Iwata, Gota Morota, Jessica Tressou, Diego Jarquin, Emi Tanaka, and myself. The link above provides access to the course materials for the sections I taught.
 
-[Link the the official webpage](The official webpage for ['omics assisted breeding methods.](https://sites.google.com/ut-biomet.org/statistical-methods-ws/))
+[Link the the official webpage](https://sites.google.com/ut-biomet.org/statistical-methods-ws/)
