@@ -3,7 +3,7 @@ title: "GWAS Workshop @ VT"
 collection: teaching
 type: "Short Workshop"
 permalink: /teaching/GWAS-Workshop-at-VT
-venue: "University 1, Department"
+venue: "Virginia Tech, School of Plant and Environmental Sciences"
 date: 2019-06-24
 location: "Blacksburg, Virginia, USA"
 ---
