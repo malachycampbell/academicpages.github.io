@@ -8,7 +8,6 @@ date: 2018-11-12
 location: "Tokyo, Japan"
 ---
 
-# Statistical Methods for Omics Assisted Breeding
 The official webpage for ['omics assisted breeding methods.](https://sites.google.com/ut-biomet.org/statistical-methods-ws/)
 
 **Dates and Location**
