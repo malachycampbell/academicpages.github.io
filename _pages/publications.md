@@ -5,6 +5,10 @@ author_profile: true
 ---
 
 ## Pre-prints
+<b>[Leveraging genome-enabled growth models to study shoot growth responses to water deficit in rice.](http://malachycampbell.github.io/publications/2019-07-05-CGM) </b> <b>M.T. Campbell</b>, Grondin A, Walia H, Morota G (2019). <i>bioRxiv</i>.
+
+We used a novel, genome-enabled growth model that integrates genome-wide SNP markers and empirical data derived from image-based phenotyping platforms to jointly model water use and shoot biomass trajectories. We show that there is a trade-off between early vigor and drought tolerance, and identify an aquaporin gene, OsPIP1;1, as a potential candidate that regulates the timing of shoot growth responses to water deficit.
+
 <b>[Variance heterogeneity genome-wide mapping for cadmium in bread wheat reveals novel genomic loci and epistatic interactions.](http://malachycampbell.github.io/publications/2019-06-12-vQTL-wheat) </b> Hussain, W., <b>M.T. Campbell</b>, Jarquin D, Walia H, Morota G (2019). <i>bioRxiv</i>.
 
 We applied variance-heterogeneity GWAS to identify several loci associated with grain cadmium concentration in bread wheat. Moreover, we showed that several of the vQTL loci were involved in pairwise interactions with other vQTL loci, indicating that epistasis may underlie differences in variance heterogeniety.
