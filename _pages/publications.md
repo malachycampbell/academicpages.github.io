@@ -27,24 +27,17 @@ The differences between the subspecies of rice has been extensively studied at t
 
 <br>
 
-![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-left height="200px" width="246px"}
-
-<b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/publications/2018-6-29-Using-LASSO-in-gene-co-expression) </b> Du, Q., <b> M.T. Campbell</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2018). <i>bioRxiv</i>. 
-
-Here, we used LASSO to select gene coexpression modules associated with salinity tolerance traits.
-
-<br>
-
 ## Peer-reviewed Publications
 
-![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-right height="200px" width="246px"}
+![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-left height="200px" width="246px"}
 
 <b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/publications/2018-6-29-Using-LASSO-in-gene-co-expression) </b> Du, Q., <b> M.T. Campbell</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2019). <i>Plant Direct (In Press)</i>. 
 
 Here, we used LASSO to select gene coexpression modules associated with salinity tolerance traits.
 
 <br>
-![Momen2019](http://malachycampbell.github.io/images/MM_2019.jpg){: .align-left height="200px" width="195px"}
+
+![Momen2019](http://malachycampbell.github.io/images/MM_2019.jpg){: .align-right height="200px" width="195px"}
 
 <b>[Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines.](http://malachycampbell.github.io/publications/2019-05-08-Momen_2019b) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>G3: Genes, Genomes, Genetics (In Press)</i>.
 
