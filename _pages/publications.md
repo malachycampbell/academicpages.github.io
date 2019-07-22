@@ -13,12 +13,6 @@ We used a novel, genome-enabled growth model that integrates genome-wide SNP mar
 
 We applied variance-heterogeneity GWAS to identify several loci associated with grain cadmium concentration in bread wheat. Moreover, we showed that several of the vQTL loci were involved in pairwise interactions with other vQTL loci, indicating that epistasis may underlie differences in variance heterogeniety.
 
-<b>[Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines.](http://malachycampbell.github.io/publications/2019-05-08-Momen_2019b) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
-
-We sought to apply random regression models to forecast shoot growth trajectories using B-splines and Legendre polynomials in well-watered and water-limited conditions under various longitudinal cross-validation scenarios. We showed that the frequency of phenotypic evaluation can be reduced without impacting prediction accuracy.
-
-<br>
-
 <b>[Harnessing phenotypic networks and structural equation models to improve genome-wide association analysis.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
 
 In conventional multi-trait GWAS approaches the covariance between phenotypes are leveraged to improve the detection of genetic signal, however with these approaches we don't know how the QTL affects the phenotype(s). Medhi used a Bayesian network approach to eludicate the relationship between biomass (shoot and root), water use, and water use efficiency. Structural equation modeling integrated with GWAS to decompose QTL effects and elucidate how a QTL acts on mutiple traits.
@@ -42,6 +36,21 @@ Here, we used LASSO to select gene coexpression modules associated with salinity
 <br>
 
 ## Peer-reviewed Publications
+
+![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-right height="200px" width="246px"}
+
+<b>[Using LASSO in gene co-expression network for genome-wide identification of gene interactions responding to salt stress in rice.](http://malachycampbell.github.io/publications/2018-6-29-Using-LASSO-in-gene-co-expression) </b> Du, Q., <b> M.T. Campbell</b>, H. Yu, K. Liu, H. Walia, Q. Zhang, C. Zhang. (2019). <i>Plant Direct (In Press)</i>. 
+
+Here, we used LASSO to select gene coexpression modules associated with salinity tolerance traits.
+
+<br>
+![Momen2019](http://malachycampbell.github.io/images/MM_2019.jpg){: .align-left height="200px" width="195px"}
+
+<b>[Predicting longitudinal traits derived from high-throughput phenomics in contrasting environments using genomic Legendre polynomials and B-splines.](http://malachycampbell.github.io/publications/2019-05-08-Momen_2019b) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>G3: Genes, Genomes, Genetics (In Press)</i>.
+
+We sought to apply random regression models to forecast shoot growth trajectories using B-splines and Legendre polynomials in well-watered and water-limited conditions under various longitudinal cross-validation scenarios. We showed that the frequency of phenotypic evaluation can be reduced without impacting prediction accuracy.
+
+<br>
 
 ![Yu2019](http://malachycampbell.github.io/images/HpYujpg.jpg){: .align-left height="300px" width="184px"}
 
