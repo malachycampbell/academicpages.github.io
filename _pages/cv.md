@@ -80,13 +80,14 @@ Skills
 ======
 * Quantitative Skills
   * Transcriptome Analysis
-    * Microarray: Affy, limma
-    * RNA-sequencing: BWA, limma, EdgeR, DEseq
-    * Co-expression network analysis: Weighted Gene Coexpression Network Analysis (WGCNA), Cytoscape
+    * Microarray
+    * RNA-sequencing
+    * Co-expression network analysis
   * Quantitative Genetics
-    * QTL Mapping: R/qtl
-    * Genome-wide Association Mapping: GEMMA, EMMA, TASSEL
-    * eQTL Mapping: Matrix eQTL, eQTL-BMA, TWAS/Fusion
+    * QTL Mapping
+    * Genome-wide Association Mapping
+    * eQTL Mapping
+    * Genomic Prediction
   * Statistics
     * SAS
     * R
