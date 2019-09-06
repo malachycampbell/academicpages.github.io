@@ -13,10 +13,6 @@ We used a novel, genome-enabled growth model that integrates genome-wide SNP mar
 
 We applied variance-heterogeneity GWAS to identify several loci associated with grain cadmium concentration in bread wheat. Moreover, we showed that several of the vQTL loci were involved in pairwise interactions with other vQTL loci, indicating that epistasis may underlie differences in variance heterogeniety.
 
-<b>[Harnessing phenotypic networks and structural equation models to improve genome-wide association analysis.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>bioRxiv</i>.
-
-In conventional multi-trait GWAS approaches the covariance between phenotypes are leveraged to improve the detection of genetic signal, however with these approaches we don't know how the QTL affects the phenotype(s). Medhi used a Bayesian network approach to eludicate the relationship between biomass (shoot and root), water use, and water use efficiency. Structural equation modeling integrated with GWAS to decompose QTL effects and elucidate how a QTL acts on mutiple traits.
-
 <br>
 
 ![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="375px" width="356px"}
@@ -28,6 +24,13 @@ The differences between the subspecies of rice has been extensively studied at t
 <br>
 
 ## Peer-reviewed Publications
+
+<b>[Utilizing trait networks and structural equation models as tools to
+interpret multi-trait genome-wide association studies.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>Plant Methods (In Press)</i>.
+
+In conventional multi-trait GWAS approaches the covariance between phenotypes are leveraged to improve the detection of genetic signal, however with these approaches we don't know how the QTL affects the phenotype(s). Medhi used a Bayesian network approach to eludicate the relationship between biomass (shoot and root), water use, and water use efficiency. Structural equation modeling integrated with GWAS to decompose QTL effects and elucidate how a QTL acts on mutiple traits.
+
+<br>
 
 ![Du2018](http://malachycampbell.github.io/images/Du_2018.jpg){: .align-left height="200px" width="246px"}
 
