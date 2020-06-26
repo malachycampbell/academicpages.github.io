@@ -21,10 +21,15 @@ Education
 
 Research Experience
 ======
-* January 2019 - Current: Postdoctoral Researcher
+* October 2019 - Current: Postdoctoral Researcher
+  * Plant Breeding and Genetics Section, Cornell University
+  * Supervisors: Jean-Luc Jannink and Michael A. Gore
+  * Multiomic integration to study and improve heathful compounds in oat seeds.
+  
+* January 2019 - October 2019: Postdoctoral Researcher
   * Department of Animal and Poultry Sciences, Virginia Tech
   * Supervisor: Gota Morota
-  * Currently, I am continuing to develop novel approaches for genomic prediction and GWAS of longitudinal traits, as well as integrating process-driven ecophysiological models with whole genome regression approaches.
+  * Continued to develop novel approaches for genomic prediction and GWAS of longitudinal traits, as well as integrating process-driven ecophysiological models with whole genome regression approaches.
   
 * September 2017 - January 2019: Postdoctoral Researcher
   * Department of Animal Science, University of Nebraska - Lincoln
