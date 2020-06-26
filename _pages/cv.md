@@ -110,6 +110,11 @@ Skills
 
 Teaching Experience
 ======
+* June 24-26 2019: Co-instructor
+  * School of Plant and Environmental Sciences
+  * Virginia Polytechnic Institute and State University - Blacksburg, VA
+  * GWAS workshop
+
 * November 11-15 2018: Co-instructor
   * Department of Agriculture and Life Sciences
   * University of Tokyo - Tokyo, JP
