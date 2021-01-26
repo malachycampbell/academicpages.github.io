@@ -10,7 +10,7 @@ author_profile: true
 
 ## Peer-reviewed Publications
 
-<b>[Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2020-TransSubsp) <\b> <b>Campbell MT<\b>, Du Q, Liu K, Sharma S, Zhang C, Walia H. 2020. Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>). <i>BMC Genomics</i>. 21(1):1-6.
+<b>[Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2020-TransSubsp) </b> <b>Campbell MT</b>, Du Q, Liu K, Sharma S, Zhang C, Walia H. 2020. Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>). <i>BMC Genomics</i>. 21(1):1-6.
 
 <b>[Utilizing trait networks and structural equation models as tools to
 interpret multi-trait genome-wide association studies.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>Plant Methods (In Press)</i>.
