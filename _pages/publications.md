@@ -5,25 +5,12 @@ author_profile: true
 ---
 
 ## Pre-prints
-<b>[Leveraging genome-enabled growth models to study shoot growth responses to water deficit in rice.](http://malachycampbell.github.io/publications/2019-07-05-CGM) </b> <b>M.T. Campbell</b>, Grondin A, Walia H, Morota G (2019). <i>bioRxiv</i>.
-
-We used a novel, genome-enabled growth model that integrates genome-wide SNP markers and empirical data derived from image-based phenotyping platforms to jointly model water use and shoot biomass trajectories. We show that there is a trade-off between early vigor and drought tolerance, and identify an aquaporin gene, OsPIP1;1, as a potential candidate that regulates the timing of shoot growth responses to water deficit.
-
-<b>[Variance heterogeneity genome-wide mapping for cadmium in bread wheat reveals novel genomic loci and epistatic interactions.](http://malachycampbell.github.io/publications/2019-06-12-vQTL-wheat) </b> Hussain, W., <b>M.T. Campbell</b>, Jarquin D, Walia H, Morota G (2019). <i>bioRxiv</i>.
-
-We applied variance-heterogeneity GWAS to identify several loci associated with grain cadmium concentration in bread wheat. Moreover, we showed that several of the vQTL loci were involved in pairwise interactions with other vQTL loci, indicating that epistasis may underlie differences in variance heterogeniety.
-
-<br>
-
-![SS2019](http://malachycampbell.github.io/images/Campbell_2019_SS.jpg){: .align-left height="375px" width="356px"}
-
-<b>[The genetic basis of cis-regulatory divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>).](http://malachycampbell.github.io/publications/2019-01-04-The-genetic-basis-of-cis-regulatory-divergence-between-the-subspecies-of-cultivated-rice) </b> <b>Campbell, M.T.</b>, Q. Du, K. Liu, S. Sharma, C. Zhang, & H. Walia (2019). <i>bioRxiv</i>.
-
-The differences between the subspecies of rice has been extensively studied at the morphological and genetic levels, however few studies have examined how these subspecies diverge at the transcriptional level. Here, we provide a comprehensive comparison of transcriptome diversity within cultivated rice and document the cis regulatory divergence between <i>Indica</i> and <i>Japonica</i>. To date, this is the largest collection of rice transcriptomes.
 
 <br>
 
 ## Peer-reviewed Publications
+
+<b>[Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2020-TransSubsp) <\b> <b>Campbell MT<\b>, Du Q, Liu K, Sharma S, Zhang C, Walia H. 2020. Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>). <i>BMC Genomics</i>. 21(1):1-6.
 
 <b>[Utilizing trait networks and structural equation models as tools to
 interpret multi-trait genome-wide association studies.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>Plant Methods (In Press)</i>.
