@@ -9,11 +9,14 @@ author_profile: true
 <br>
 
 ## Peer-reviewed Publications
+<b>[Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2020-TransSubsp)</b> <b>Campbell MT</b>, Du Q, Liu K, Sharma S, Zhang C, Walia H. 2020. Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>). <i>BMC Genomics</i>. 21(1):1-6.
 
-<b>[Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>)](http://malachycampbell.github.io/publications/2020-TransSubsp) </b> <b>Campbell MT</b>, Du Q, Liu K, Sharma S, Zhang C, Walia H. 2020. Characterization of the transcriptional divergence between the subspecies of cultivated rice (<i>Oryza sativa</i>). <i>BMC Genomics</i>. 21(1):1-6.
+<b>[Leveraging genome-enabled growth models to study shoot growth responses to water deficit in rice](http://malachycampbell.github.io/publications/2019-07-05-CGM)</b> <b>Campbell M.T.</b>, Grondin A., Walia H., Morota G. (2020) Leveraging genome-enabled growth models to study shoot growth responses to water deficit in rice. <i>J. Exp. Bot</i> 71(18):5669–5679
+
+<b>[Variance heterogeneity genome-wide mapping for cadmium in bread wheat reveals novel genomic loci and epistatic interactions](http://malachycampbell.github.io/publications/2019-06-12-vQTL-wheat) </b> Hussain W., <b>Campbell M.T.</b>, Jarquin D., Walia H., Morota G. (2020) Variance heterogeneity genome-wide mapping for cadmium in bread wheat reveals novel genomic loci and epistatic interactions. <i>The Plant Genome</i>.
 
 <b>[Utilizing trait networks and structural equation models as tools to
-interpret multi-trait genome-wide association studies.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>Plant Methods (In Press)</i>.
+interpret multi-trait genome-wide association studies.](http://malachycampbell.github.io/publications/2019-02-18-Harnessing-phenotypic-networks) </b> Momen, M., <b>M.T. Campbell</b>, Walia H, Morota G (2019). <i>Plant Methods: 15(107)</i>.
 
 In conventional multi-trait GWAS approaches the covariance between phenotypes are leveraged to improve the detection of genetic signal, however with these approaches we don't know how the QTL affects the phenotype(s). Medhi used a Bayesian network approach to eludicate the relationship between biomass (shoot and root), water use, and water use efficiency. Structural equation modeling integrated with GWAS to decompose QTL effects and elucidate how a QTL acts on mutiple traits.
 
