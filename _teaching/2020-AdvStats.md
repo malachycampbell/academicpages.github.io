@@ -64,13 +64,13 @@ There are no required textbooks, however participants my find the following text
   * Bailey, Rosemary A. Design of comparative experiments. Vol. 25. Cambridge University Press, 2008.
 
 ## X. Tentative Course Schedule
-  *Module 1: Introduction; design and analysis of unstructured experiments (Ch. 1-3 Bailey; Ch. 2 Montgomery)
-  *Module 2: Introducing the linear model and hypothesis testing (Ch 3 Bailey; Ch 3 Montgomery)
-  *Module 3: Regression and prediction (Ch 10 Montgomery)
-  *Module 4: Blocked designs (Ch 4, 6, 9, 11 Bailey; Ch 4 Montgomery)
-  *Module 5: Factorial designs (Bailey Ch 5, 12; Montgomery Ch 5-7)
-  *Module 6: Unreplicated designs
-  *Module 7: Experiments with correlated observations - spatial and longitudinal analysis
-  *Module 8: Multivariate approaches
-  *Module 9: Coping with high-dimensional responses
-  *Module 10: Advanced topics - Bayesian statistics
+  * Module 1: Introduction; design and analysis of unstructured experiments (Ch. 1-3 Bailey; Ch. 2 Montgomery)
+  * Module 2: Introducing the linear model and hypothesis testing (Ch 3 Bailey; Ch 3 Montgomery)
+  * Module 3: Regression and prediction (Ch 10 Montgomery)
+  * Module 4: Blocked designs (Ch 4, 6, 9, 11 Bailey; Ch 4 Montgomery)
+  * Module 5: Factorial designs (Bailey Ch 5, 12; Montgomery Ch 5-7)
+  * Module 6: Unreplicated designs
+  * Module 7: Experiments with correlated observations - spatial and longitudinal analysis
+  * Module 8: Multivariate approaches
+  * Module 9: Coping with high-dimensional responses
+  * Module 10: Advanced topics - Bayesian statistics
