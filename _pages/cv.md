@@ -110,6 +110,11 @@ Skills
 
 Teaching Experience
 ======
+* Sept 2-25 2020: Co-instructor
+  * School of Integrative Plant Science
+  * Cornell University - Ithaca, NY
+  * Advanced Statistics and Experimental Design
+
 * June 24-26 2019: Co-instructor
   * School of Plant and Environmental Sciences
   * Virginia Polytechnic Institute and State University - Blacksburg, VA
